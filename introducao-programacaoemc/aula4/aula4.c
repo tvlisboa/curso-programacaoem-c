@@ -28,5 +28,6 @@ int main(){
         printf("Menor de idade \n");
     }
     
+    system("pause");
     return 0;
 }

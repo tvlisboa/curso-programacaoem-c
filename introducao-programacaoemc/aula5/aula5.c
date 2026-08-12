@@ -16,28 +16,31 @@ int main(){
 
     /* dados do aluno */
     printf("Informe as 4 notas do aluno a seguir: \n");
-    printf("Nota 1: ");
-    scanf("%f" , &n1);
+        printf("Nota 1: ");
+        scanf("%f" , &n1);
 
-    printf("Nota 2: ");
-    scanf("%f" , &n2);
+        printf("Nota 2: ");
+        scanf("%f" , &n2);
 
-    printf("Nota 3: ");
-    scanf("%f" , &n3);
+        printf("Nota 3: ");
+        scanf("%f" , &n3);
 
-    printf("Nota 4: ");
-    scanf("%f" , &n4);
+        printf("Nota 4: ");
+        scanf("%f" , &n4);
 
     media = (n1 + n2 + n3 + n4) /4;
+
     /* utilizando %.1f\n - formata somente com uma casa decimaal apos a virgula*/
     printf("Media final do aluno: %.2f\n" , media);
 
-    /* verificar a media - aprovado ou reprovado */
-    if(media>=7){
-        printf("\nAluno aprovado. \n");
-    }else{
-        printf("Aluno reprovado. \n");
-    }
+        /* verificar a media - aprovado ou reprovado */
+        if(media>=7){
+            printf("\nAluno aprovado. \n");
+        }else if(media>=5){
+            printf("Aluno em recuperacao. \n");
+        }else{
+            printf("Aluno em reprovado. \n");
+        }
 
     system("pause");
     return 0;
