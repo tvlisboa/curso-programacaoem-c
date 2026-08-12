@@ -30,10 +30,10 @@ int main(){
 
     media = (n1 + n2 + n3 + n4) /4;
 
-    /* utilizando %.1f\n - formata somente com uma casa decimaal apos a virgula*/
+    /* utilizando %.1f\n - formata com duas casas decimais apos a virgula*/
     printf("Media final do aluno: %.2f\n" , media);
 
-        /* verificar a media - aprovado ou reprovado */
+        /* verificar a media - aprovado - recuperacao ou reprovado */
         if(media>=7){
             printf("\nAluno aprovado. \n");
         }else if(media>=5){
