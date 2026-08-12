@@ -29,7 +29,8 @@ int main(){
     scanf("%f" , &n4);
 
     media = (n1 + n2 + n3 + n4) /4;
-    printf("Media final do aluno: %f\n" , media);
+    /* utilizando %.1f\n - formata somente com uma casa decimaal apos a virgula*/
+    printf("Media final do aluno: %.2f\n" , media);
 
     /* verificar a media - aprovado ou reprovado */
     if(media>=7){
