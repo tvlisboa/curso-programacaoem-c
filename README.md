@@ -8,11 +8,10 @@ Dentro deste repositório será abordado os seguintes conteúdos!
 2. Utilização de algoritmos
 3. Operadores
 4. Estruturas Condicionais
-5. Laços de Repetiçõe
+5. Laços de Repetições
 6. Vetores e Matrizes
 7. Funções
 8. Structus
 9. Ponteiros
 10. Arquivos
-11. Estruturas de dados básicos
-
+11. Estruturas de dados básicos.
