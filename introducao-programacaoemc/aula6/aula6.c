@@ -11,38 +11,59 @@ int option;
 
 int main(int argc, char *argv[]){
 
-    printf("* Sistemas Operacionais. *\n");
-    printf("[ 1 ] - Windows \n");
-    printf("[ 2 ] - Linux \n");
-    printf("[ 3 ] - Mac \n");
-    printf("\nEscolha uma opcao acima: \n");
+    printf("***************************** \n");
+    printf("*   Sistemas Operacionais.  * \n");
+    printf("* Escolha uma opcao abaixo: * \n");
+    printf("[ 1 ] - Windows.\n");
+    printf("[ 2 ] - Zorin OS.\n");
+    printf("[ 3 ] - Pop OS.\n");
+    printf("[ 4 ] - Linux Mint.\n");
+    printf("[ 5 ] - Steam OS.\n");
+    printf("[ 6 ] - Mac.\n");
+    printf("[ 9 ] - Mais opcoes.\n");
+    printf("[ 0 ] - Sair.\n");
     scanf("%d", &option);
     
     switch (option)
     {
     case 1:
         system("cls");
-        printf("Inciando o Windows... \n");       
+        printf("Iniciando o Windows...\n");       
         break;
 
     case 2:
         system("cls");
-        printf("Inciando o Linux... \n");
+        printf("Iniciando o Zorin OS...\n");
         break;
 
     case 3:
         system("cls");
-        printf("Inciando o Mac... \n");
+        printf("Iniciando o Pop OS...\n");
         break;
 
     case 4:
         system("cls");
-        printf("Mais opcoes... \n");
+        printf("Iniciando o Linux Mint...\n");
+        break;
+
+    case 5:
+        system("cls");
+        printf("Iniciando o Steam OS...\n");
+        break;
+
+    case 6:
+        system("cls");
+        printf("Iniciando o Mac...\n");
         break;
 
     case 9:
         system("cls");
-        printf("Sair... \n");
+        printf("Mais opcoes...\n");
+        break;
+    
+    case 0:
+        system("cls");
+        printf("Sair...\n");
         break;
 
     default:

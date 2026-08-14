@@ -35,6 +35,7 @@ int main(int argc, char const *argv[])
 
     idadeUsuario = (anoAtual - anoNascimento);
 
+
         if (idadeUsuario>=65){
             printf("\nUsuario é idoso \n");
         }else if(idadeUsuario>=21){
@@ -44,9 +45,8 @@ int main(int argc, char const *argv[])
         }else{
             printf("\nUsuario é crianca \n");
         }
+    
         
-        
-
     /* saida de dados - usuario */
     printf("Nome do usuario: %s\n" , name);
     printf("Ano de nascimento: %d\n" , anoNascimento);
