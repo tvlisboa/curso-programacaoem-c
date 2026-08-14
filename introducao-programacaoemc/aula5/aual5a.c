@@ -11,6 +11,7 @@
 * Abaixo de 18 - Crianca
 */
 
+/* opcoes como - printf and scanf */
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -25,25 +26,37 @@ int main(int argc, char const *argv[])
     printf("********************************************* \n");
     printf("Entre com as informaçoes do usuario a seguir: \n");
     printf("Nome do usuario: ");
-    scanf("%s", &name);
+    scanf("%49s", name);
 
     printf("Ano de nascimento: ");
-    scanf("%d\n", &anoNascimento);
+    scanf("%d", &anoNascimento);
 
     printf("Ano atual: ");
-    scanf("%d\n", &anoAtual);
+    scanf("%d", &anoAtual);
 
+    /* validacao - nao aceita ano maior que ano atual*/
+    while (anoNascimento>anoAtual)
+    {
+        printf("Dados informados são inválidos - tente novamente! ");
+
+        printf("Ano de nascimento: ");
+        scanf("%d", &anoNascimento);
+
+        printf("Ano atual: ");
+        scanf("%d", &anoAtual);
+    }
+    
     idadeUsuario = (anoAtual - anoNascimento);
 
 
         if (idadeUsuario>=65){
-            printf("\nUsuario é idoso \n");
+            printf("Classificacao:  Idoso\n");
         }else if(idadeUsuario>=21){
-            printf("\nUsuario é adulto \n");
+            printf("Classificacao: Adulto\n");
         }else if(idadeUsuario>=18){
-            printf("\nUsuario é adolescente \n");
+            printf("Classificacao: Adolescente\n");
         }else{
-            printf("\nUsuario é crianca \n");
+            printf("Classificacao: Crianca\n");
         }
     
         
