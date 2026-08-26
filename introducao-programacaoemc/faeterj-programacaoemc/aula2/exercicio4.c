@@ -34,12 +34,19 @@
         scanf("%d", &anoNascimento);
     }
 
-    /* validacao de idade - idoso - adulto - adolescente e crianca*/
-    
-
     /* calculo da idade */
     int idadeUsuario = anoAtual - anoNascimento;
 
+        /* validacao de idade - idoso - adulto - adolescente e crianca*/
+        if(idadeUsuario>= 60){
+            printf("\nUsuario informado é considerado idoso!");
+        }else if(idadeUsuario>=18){
+            printf("\nUsuario informado é considerado adulto!");
+        }else if(idadeUsuario>=16){
+            printf("\nUsuario informado é considerado adolescente!");
+        }else{
+            printf("\nUsuario informado é considerado criança!");
+        }
 
     /* saida de dados do usuario */
     printf("\nAno de nascimento; %d", anoNascimento);
