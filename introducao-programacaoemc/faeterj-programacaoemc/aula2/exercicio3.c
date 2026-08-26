@@ -19,15 +19,21 @@
     printf("* Inicio do algoritmo. *\n");
 
     /* entrada de dados pelo usuario*/
-    printf("Digite a altura do terreno em mt²: ");
+    printf("Digite a altura do terreno em mt: ");
     scanf("%lf", &altura);
 
-    printf("Digite a largura do terreno em mt²: ");
+    printf("Digite a largura do terreno em mt: ");
     scanf("%lf", &largura);
 
     /* calculo da area do terreno */
     area = largura * altura;
 
+    /* saida de dados */
+    printf("****************************************");
+    printf("\nAltura do terreno em mt: %.2lf", altura);
+    printf("\nLargura do terreno em mt: %.2lf", largura);
+    printf("\nArea total do terreno em mt: %.2lf", area);
+    printf("\n**************************************** \n");
     return 0;
  }
  
