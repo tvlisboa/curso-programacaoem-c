@@ -12,15 +12,18 @@ int main(){
     char name[100];
     double peso;
 
-    printf("Insira seu nome a seguir : ");
+    printf("****************************** \n");
+    printf("* Insira seu nome a seguir : * \n");
     scanf("%s", name);
 
     printf("Insira seu peso a seguir : ");
     scanf("%lf", &peso);
 
-    printf("Dados informados pelo usuario.\n");
-    printf("Nome informado do usuario: %s\n", name);
-    printf("Peso informado do usuario: %.2lf", peso);
-    printf("\nFim do algoritmo! \n");
+    printf("********************************* \n");
+    printf("* Dados informados pelo usuario *\n");
+    printf("* Nome: %s\n", name);
+    printf("* Peso: %.2lf\n", peso);
+    printf("\n* Fim do algoritmo! *\n");
+    printf("********************************* \n");
     return 0;
  }
