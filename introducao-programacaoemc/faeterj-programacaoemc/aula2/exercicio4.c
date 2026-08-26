@@ -49,9 +49,11 @@
         }
 
     /* saida de dados do usuario */
-    printf("\nAno de nascimento; %d", anoNascimento);
+    printf("\n*******************************");
+    printf("\nAno de nascimento: %d", anoNascimento);
     printf("\nAno atual informado: %d", anoAtual);
     printf("\nIdade do usuario: %d", idadeUsuario);
+    printf("\n*******************************");
     return 0;
  }
  
