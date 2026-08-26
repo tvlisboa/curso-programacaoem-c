@@ -22,7 +22,14 @@
     printf("\n *Numero 1: ");
     scanf("%d", &n1);
 
-    /* nao aceita numeros menores que zero*/
+        /* nao aceita numeros menores que zero*/
+        while (n1<0)
+        {
+            printf("Numero informado é invalido - tente novamente! \n");
+            printf("Numero 1: ");
+            scanf("%d", &n1);
+        }
+    
 
     /* numeros antecessores e sucessores*/
     antecessor = n1 - 1 ;
@@ -34,7 +41,7 @@
     printf("\n*Numero antecessor: %d", antecessor);
     printf("\n*Numero sucessor: %d", sucessor);
     printf("\n*Fim do algoritmo!");
-    printf("************************** \n");
+    printf("\n************************** \n");
     system("pause");
     return 0;
  }
