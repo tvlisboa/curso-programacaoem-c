@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char nome[];
+char nome[100];
 double salario;
 double novosalario;
 
