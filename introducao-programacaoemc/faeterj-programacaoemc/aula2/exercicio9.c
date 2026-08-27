@@ -20,6 +20,25 @@
     printf("* CONSULTA DE PRODUTOS * \n");
     printf("************************ \n");
 
+    printf("Nome do produto: ");
+    scanf("%s", produto);
+
+    printf("Preco do produto: ");
+    scanf("%lf", &preco);
+
+    printf("Quantidade: ");
+    scanf("%d", &quantidade);
+
+    /* calculo de valor total */
+    double valorTotal = (quantidade * preco);
+
+    /* saida de dados */
+    printf("\nNome do produto: %s", produto);
+    printf("\nPreco unitario: %.2f", preco);
+    printf("\nQuantidade: %d", quantidade);
+    printf("\nValor total da compra: %.2f", valorTotal);
+
+    system("\npause");
     return 0;
 }
  
