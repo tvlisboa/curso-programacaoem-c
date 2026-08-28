@@ -26,6 +26,7 @@ int main(int argc, char const *argv[])
     printf("Salario: ");
     scanf("%lf", &salario);
 
+    /* claculo novo salario com 10% */
     novosalario = salario+(salario*10)/100;
 
     printf("Dados informados do funcionario \n");
