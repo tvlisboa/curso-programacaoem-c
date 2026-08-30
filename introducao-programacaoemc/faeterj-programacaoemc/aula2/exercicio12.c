@@ -23,7 +23,7 @@
    printf("Informe o nome da cidade abaixo: ");
    scanf("%s", nomeCidade);
 
-   printf("Informe a temperatura local em Celsius: ");
+   printf("Informe a temperatura local em Celsius: \n");
    scanf("%lf", &temperaturaLocal);
 
    double temperaturaFh = (temperaturaLocal * 9/5) + 32;                        //conversao para celsius
