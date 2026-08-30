@@ -27,6 +27,7 @@
 
     char marcaVeiculo[50];
     char modeloVeiculo[50];
+    char combustivel[50];
     int anoFabricacao;
     double cilindradas;
 
@@ -45,6 +46,8 @@
     printf("* Cilindradas do veiculo: ");
     scanf("%lf", &cilindradas);
 
+    printf("* Combustivel usado");
+    scanf("%s", combustivel);
 
     /* teste de saida de dados informados*/
     printf("**************************************");
