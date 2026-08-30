@@ -28,6 +28,7 @@
     char marcaVeiculo[50];
     char modeloVeiculo[50];
     int anoFabricacao;
+    double cilindradas;
 
     printf("************************************** \n");
     printf("*     SISTEMA DE COSUMO VEICULAR     * \n");
@@ -41,7 +42,18 @@
     printf("* Ano de fabricao: ");
     scanf("%d", &anoFabricacao);
 
-    
+    printf("* Cilindradas do veiculo: ");
+    scanf("%lf", &cilindradas);
+
+
+    /* teste de saida de dados informados*/
+    printf("**************************************");
+    printf("\n*    DADOS INFORMADOS PELO USUARIO   *");
+    printf("\n* Marca do veiculo: %s", marcaVeiculo);
+    printf("\n* Modelo do veiculo: %s", marcaVeiculo);
+    printf("\n* Ano de fabricacao: %d", anoFabricacao);
+    printf("\n* Cilindradas: %.2lf", cilindradas);
+    printf("\n**************************************");
     return 0;
  }
  
