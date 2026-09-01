@@ -174,13 +174,22 @@
         }
     break;
 
+    //mais informacoes
     case 9:
         printf("********************************* \n");
         printf("*       CALULADORA BASICA       * \n");
         printf("* SECAO MAIS INFORMACOES ABAIXO * \n");
+        printf("*      HISTORIA DOS NUMEROS     * \n");
+        printf("*    CONVERSAO  DE  BINARIOS    * \n");
+        printf("*  ESTRUTURA DE DADOS NUMERICOS * \n");
+        printf("********************************* \n");
     break;
 
-    default:
+    //sair
+    case 0:
+        printf("******************************************** \n");
+        printf("* SAIR - OBRIGADO POR USAR NOSSOS SISTEMAS * \n");
+        printf("******************************************** \n");
     break;
     }
         
