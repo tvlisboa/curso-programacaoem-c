@@ -34,8 +34,41 @@
     printf("* [ 7 ] RAIZ CUBIDA \n");
     printf("* [ 8 ] RESTO DA SOMA \n");
     printf("* [ 9 ] MAIS INFORMACOES \n");
-    printf("* [ 0 ] SAIR");
+    printf("* [ 0 ] SAIR \n");
     scanf("%d", &option);
+
+    switch (option) {
+    case 1:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        int soma = (n1 + n2);
+
+        printf("\n");
+        printf("Soma dos numeros informados %d", soma);
+    break;
+    
+    case 2:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        int subtracao = (n1 + n2);
+
+        printf("\n");
+        printf("Subtracao dos numeros informados %d", subtracao);
+    break;
+
+    default:
+    break;
+    }
     
 
     printf("\n");
