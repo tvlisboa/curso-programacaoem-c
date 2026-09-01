@@ -23,7 +23,6 @@
     char nomeCidade[100];
     char mensagem[100];
     double temperaturaLocal;
-    int option;                                     //utilizacao switch-case
 
     printf("************************************ \n");
     printf("*     APP DE TEMPERATURA LOCAL     * \n");
@@ -46,7 +45,8 @@
         strcpy(mensagem, "Local esta com clima frio extremo - proteja-se! \n");
     }
 
-    for (int i = 0; nomeCidade[i] !='\0'; i++)              //conversao para uppercase
+    //conversao nome da cidade para uppercase
+    for (int i = 0; nomeCidade[i] !='\0'; i++)              
     {
         nomeCidade[i] = toupper(nomeCidade[i]);
     }

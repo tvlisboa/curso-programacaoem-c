@@ -23,6 +23,9 @@
     int option;
     int n1, n2;
     
+    do {
+
+    system("clear");
     printf("********************************* \n");
     printf("*       CALULADORA BASICA       * \n");
     printf("* ESCOLHA UMA DAS OPCOES ABAIXO * \n");
@@ -38,10 +41,8 @@
     printf("* [ 0 ] SAIR \n");
     scanf("%d", &option);
 
-    while (option !=0)
-    {
-    
     switch (option) {
+
     //soma
     case 1:
         printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
@@ -66,7 +67,7 @@
         printf("* Numero 2: ");
         scanf("%d", &n2);
 
-        int subtracao = (n1 + n2);
+        int subtracao = (n1 - n2);
 
         printf("\n");
         printf("Subtracao dos numeros informados %d", subtracao);
@@ -114,9 +115,9 @@
         int numeroQuadrado2 = (n2 * n2);
 
         printf("\n");
-        printf("Numero quadrado do numero 1: %d", numeroQuadrado1);
+        printf("O numero %d\n ao quadrado é %.2lf\n", n1, numeroQuadrado1);
         printf("\n");
-        printf("Numero quadrado do numero 2: %d", numeroQuadrado2);
+        printf("O numero %d\n ao quadrado é %.2lf\n", n2, numeroQuadrado2);
     break;
 
     //raizquadrada
@@ -132,8 +133,8 @@
         double raizQuadradaN2 = sqrt(n2);       //fnc sqrt calcula a raiz quadrada
 
         printf("\n");
-        printf("A raiz quadrada de %.d\n é %.2lf\n: ", n1, raizQuadradaN1);
-        printf("A raiz quadrada de %.d\n é %.2lf\n: ", n2, raizQuadradaN2);
+        printf("A raiz quadrada de %d\n é %.2lf\n: ", n1, raizQuadradaN1);
+        printf("A raiz quadrada de %d\n é %.2lf\n: ", n2, raizQuadradaN2);
         printf("\n");
     break;
 
@@ -173,14 +174,20 @@
         }
     break;
 
+    case 9:
+        printf("********************************* \n");
+        printf("*       CALULADORA BASICA       * \n");
+        printf("* SECAO MAIS INFORMACOES ABAIXO * \n");
+    break;
+
     default:
     break;
     }
-}
+        
+    } while (option != 0);
 
-    printf("\n");
-    system("pause");
-    system("cls");
-    return 0;
+        printf("\n");
+        system("pause");
+        system("cls");
+        return 0;
  }
- 

@@ -17,6 +17,7 @@
  #include <stdio.h>
  #include <stdlib.h>
  #include <string.h>
+ #include <ctype.h>
 
  int main(int argc, char const *argv[])
  {
@@ -66,6 +67,13 @@
     }else{
         strcpy(mensagem, "Classificação abaixo do peso ideal");
     }
+
+    //conversao nome do usuario para uppercase
+    for (int i = 0; nomeUsuario[i] !='\0'; i++)
+    {
+        nomeUsuario[i] = toupper(nomeUsuario[i]);
+    }
+    
 
     printf("**************************************** \n");
     printf("* Nome do usuario:  %s", nomeUsuario);
