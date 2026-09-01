@@ -66,13 +66,58 @@
         printf("Subtracao dos numeros informados %d", subtracao);
     break;
 
+    case 3:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        int multiplicacao = (n1 * n2);
+
+        printf("\n");
+        printf("Multiplicacao dos numeros informados %d", multiplicacao);
+    break;
+
+    case 4:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        int divisao = (n1 / n2);
+        printf("\n");
+        printf("Divisao dos numeros informados %d", divisao);
+    break;
+
+    
+    case 5:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        int numeroQuadrado1 = (n1 * n1);
+        int numeroQuadrado2 = (n2 * n2);
+
+        printf("\n");
+        printf("Numero quadrado do numero 1: %d", numeroQuadrado1);
+        printf("\n");
+        printf("Numero quadrado do numero 2: %d", numeroQuadrado2);
+    break;
+    
     default:
     break;
     }
-    
 
     printf("\n");
     system("pause");
+    system("cls");
     return 0;
  }
  
