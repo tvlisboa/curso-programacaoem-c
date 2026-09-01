@@ -1,7 +1,7 @@
 /*
  * Calculo IMC
  * Faca um algoritmo que leia as seguintes informacoes
- * Nome do usuario
+ * Nome do usuario - idade do usuario
  * Altura e peso
  * Faca o calculo do imc e utilize os seguintes parametros para classificacao
  * imc = peso / (altura * altura)
@@ -13,3 +13,45 @@
  * Entre 35,0 e 39,9 - Obesidade grau II
  * Acima de 40,0 - Obesidade grau III
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+
+ int main(int argc, char const *argv[])
+ {
+
+    char nomeUsuario[100];
+    int idade;
+    double altura , peso;
+
+    /* teste entrada de dados */
+    printf("**************************************** \n");
+    printf("*     SISTEMA  DE  CALCULO DE  IMC     * \n");
+    printf("* INFORME OS DADOS DO USUARIO A SEGUIR * \n");
+
+    printf("* Nome do usuario: ");
+    scanf("%s", nomeUsuario);
+
+    printf("* Idade do usuario: ");
+    scanf("%d", &idade);
+
+    printf("* Altura do usuario: ");
+    scanf("%lf", &altura);
+
+    printf("* Peso do usuario: ");
+    scanf("%lf", &peso);
+
+    /* teste saida de dados do usuario */
+    printf("* Nome do usuario:  %s", nomeUsuario);
+    printf("\n");
+    printf("* Idade do usuario: %d", idade);
+    printf("\n");
+    printf("* Altura do usuario: %.2lf", altura);
+    printf("\n");
+    printf("* Peso do usuario: %.2lf", peso);
+    printf("\n");
+    system("pause");
+    return 0;
+ }
+ 
