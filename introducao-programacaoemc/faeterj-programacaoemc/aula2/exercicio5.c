@@ -22,18 +22,15 @@
     printf("\n *Numero 1: ");
     scanf("%d", &n1);
 
-        /* nao aceita numeros menores que zero*/
-        while (n1<0)
+        while (n1<0)                    //nao aceita numeros menores que zero
         {
             printf("Numero informado é invalido - tente novamente! \n");
             printf("Numero 1: ");
             scanf("%d", &n1);
         }
     
-
-    /* numeros antecessores e sucessores*/
-    antecessor = n1 - 1 ;
-    sucessor = n1 + 1;
+    antecessor = n1 - 1 ;              //numeros antecessores
+    sucessor = n1 + 1;                 //numeros sucessores
 
     printf("**************************");
     printf("\n*     DADOS INFORMADOS   *");

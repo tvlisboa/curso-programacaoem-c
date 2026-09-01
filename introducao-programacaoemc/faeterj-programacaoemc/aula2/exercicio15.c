@@ -83,6 +83,7 @@
     printf("**************************************** \n");
     printf("* Fim do algoritmo * \n");
     system("pause");
+    system("cls");
     return 0;
  }
  

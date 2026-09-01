@@ -12,7 +12,6 @@ char nome[100];
 double salario;
 double novosalario;
 
-
 int main(int argc, char const *argv[])
 {
     printf("************************************************* \n");

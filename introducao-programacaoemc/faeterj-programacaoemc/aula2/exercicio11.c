@@ -21,19 +21,19 @@
  {
 
    /* entrada de dados do usuario */
-    printf("************************ \n");
-    printf("* CONVERSAO DE MEDIDAS * \n");
-    printf("************************ \n");
+    printf("*********************************** \n");
+    printf("* CONVERSAO DE MEDIDAS DO TERRENO * \n");
+    printf("*********************************** \n");
 
-    printf("Informe as medidas do terreno: \n");
+    printf("Informe as medidas do terreno em mt²: \n");
     printf("Comprimento do terreno: ");
     scanf("%lf", &comprimento);
 
     printf("Largura do terreno: ");
     scanf("%lf", &largura);
 
-    printf("Valor medio do metro quadrado");
-    printf("%lf", &valorMedioMt);
+    printf("Valor medio do metro quadrado: ");
+    scanf("%lf", &valorMedioMt);
 
     areaTotal = comprimento * largura;        //calculo area total do terreno
     areaTotalCmt = areaTotal * 100;           //conversao de metros para centimetros
@@ -47,7 +47,7 @@
     printf("\n* Comprimento do terreno em cmt %.2lf: ", comprimentoCmt);
     printf("\n* Largura do terreno %.2lf: ", largura);
     printf("\n* Largura do terreno em cmt %.2lf: ", larguraCmt);
-    printf("\n* Valor médio em mt² %.2lf: ", valorMedioMt);
+    printf("\n* Valor médio do mt² %.2lf: ", valorMedioMt);
     printf("\n* Area total do terreno em mt²: %.2lf", areaTotal);
     printf("\n* Area total do terreno em cmt: %.2lf", areaTotalCmt);
     printf("\n* Valor total do terreno: %.2lf", valorTotal);

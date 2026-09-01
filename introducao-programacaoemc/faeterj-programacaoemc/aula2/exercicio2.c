@@ -29,6 +29,12 @@
     printf("* Nota 1: ");
     scanf("%lf", &n1);
 
+    while (n1<0 || n2>10)
+    {
+        
+    }
+    
+
     printf("* Nota 2: ");
     scanf("%lf", &n2);
 

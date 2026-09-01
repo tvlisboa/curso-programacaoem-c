@@ -15,6 +15,7 @@
  #include <stdio.h>
  #include <stdlib.h>
  #include <string.h>
+ #include <ctype.h>
 
  int main(int argc, char const *argv[])
  {
@@ -27,7 +28,7 @@
     printf("************************************ \n");
     printf("*     APP DE TEMPERATURA LOCAL     * \n");
     printf("* Informe nome da cidade: ");
-    scanf("%s", nomeCidade);
+    scanf("%99s", nomeCidade);
 
     printf("* Temperatura local em C: ");
     scanf("%lf", &temperaturaLocal);
@@ -44,19 +45,23 @@
     }else{
         strcpy(mensagem, "Local esta com clima frio extremo - proteja-se! \n");
     }
-    
+
+    for (int i = 0; nomeCidade[i] !='\0'; i++)              //conversao para uppercase
+    {
+        nomeCidade[i] = toupper(nomeCidade[i]);
+    }
 
     /* saida de dados */
     printf("************************************ \n");
     printf("*  DADOS INFORMADOS PELO USUARIO   * \n");
     printf("************************************ \n");
-    printf("%s" , nomeCidade);
+    printf("Cida informada: %s" , nomeCidade);
     printf("\n");
-    printf("%.2lf", temperaturaLocal);
+    printf("Temperatura local: %.2lf", temperaturaLocal);
     printf("\n");
     printf("%s", mensagem);
     printf("\n");
     system("pause");
+    system("cls");
     return 0;
  }
- 

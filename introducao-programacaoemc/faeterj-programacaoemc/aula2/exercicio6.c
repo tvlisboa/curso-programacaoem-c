@@ -21,15 +21,13 @@
     printf("Digite um numero a seguir: ");
     scanf("%d", &n1);
 
-    /* nao aceita numero menor do que 0*/
-    while (n1<0){
+    while (n1<0){                                           //nao aceita numero menor do que zero
         printf("Numero informado e invalido - tente novamente! \n");
         printf("Digite um numero a seguir: ");
         scanf("%d", &n1);
     }
     
-    /* verifica se o numero informado e par ou impar*/
-    if(n1 % 2 == 0){
+    if(n1 % 2 == 0){                                        //verifica se o numero informado e par ou impar
         printf("Numero informado é par");
     }else{
         printf("Numero informado é impar");

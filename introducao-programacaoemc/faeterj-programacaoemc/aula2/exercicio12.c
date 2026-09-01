@@ -23,13 +23,13 @@
    printf("Informe o nome da cidade abaixo: ");
    scanf("%s", nomeCidade);
 
-   printf("Informe a temperatura local em Celsius: \n");
+   printf("Informe a temperatura local em Celsius: ");
    scanf("%lf", &temperaturaLocal);
 
-   double temperaturaFh = (temperaturaLocal * 9/5) + 32;                        //conversao para celsius
-   double temperaturaReamur = (temperaturaLocal) * 0.8;                         //conversao para reaumur
-   double temperaturaKelvin=(temperaturaLocal) + 273.15;                        //conversao para kelvin
-   double temperaturaRankine=(temperaturaLocal * 95) + 491.67;                  //conversao para rankine
+   double temperaturaFh = (temperaturaLocal * 9/5) + 32;                          //conversao para celsius
+   double temperaturaReamur = (temperaturaLocal) * 0.8;                           //conversao para reaumur
+   double temperaturaKelvin = (temperaturaLocal) + 273.15;                        //conversao para kelvin
+   double temperaturaRankine = (temperaturaLocal * 95) + 491.67;                  //conversao para rankine
 
    printf("********************************* \n");
    printf("\n Dados informados pelo usuario: ");

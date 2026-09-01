@@ -37,7 +37,6 @@
     printf("\nPreco unitario: %.2f", preco);
     printf("\nQuantidade: %d", quantidade);
     printf("\nValor total da compra: %.2f", valorTotal);
-
     system("\npause");
     return 0;
 }
