@@ -15,6 +15,7 @@
 
  #include <stdio.h>
  #include <stdlib.h>
+ #include <math.h>
 
  int main(int argc, char const *argv[])
  {
@@ -37,7 +38,11 @@
     printf("* [ 0 ] SAIR \n");
     scanf("%d", &option);
 
+    while (option !=0)
+    {
+    
     switch (option) {
+    //soma
     case 1:
         printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
         printf("* Numero 1: ");
@@ -52,6 +57,7 @@
         printf("Soma dos numeros informados %d", soma);
     break;
     
+    //subtracao
     case 2:
         printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
         printf("* Numero 1: ");
@@ -66,6 +72,7 @@
         printf("Subtracao dos numeros informados %d", subtracao);
     break;
 
+    //multiplicacao
     case 3:
         printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
         printf("* Numero 1: ");
@@ -80,6 +87,7 @@
         printf("Multiplicacao dos numeros informados %d", multiplicacao);
     break;
 
+    //divisao
     case 4:
         printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
         printf("* Numero 1: ");
@@ -92,8 +100,8 @@
         printf("\n");
         printf("Divisao dos numeros informados %d", divisao);
     break;
-
     
+    //quadrado
     case 5:
         printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
         printf("* Numero 1: ");
@@ -110,10 +118,47 @@
         printf("\n");
         printf("Numero quadrado do numero 2: %d", numeroQuadrado2);
     break;
-    
+
+    //raizquadrada
+    case 6:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        double raizQuadradaN1 = sqrt(n1);       //fnc sqrt calcula a raiz quadrada
+        double raizQuadradaN2 = sqrt(n2);       //fnc sqrt calcula a raiz quadrada
+
+        printf("\n");
+        printf("A raiz quadrada de %.d\n é %.2lf\n: ", n1, raizQuadradaN1);
+        printf("A raiz quadrada de %.d\n é %.2lf\n: ", n2, raizQuadradaN2);
+        printf("\n");
+    break;
+
+    //raizcubica
+    case 7:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        double raizCubicaN1 = cbrt(n1);        //fnc calcula raiz cubica
+        double raizCubicaN2 = cbrt(n2);        //fnc calcula raiz cubica
+
+        printf("\n");
+        printf("A raiz cubica de %.d\n é %.2lf\n: ", n1, raizCubicaN1);
+        printf("A raiz cubica de %.d\n é %.2lf\n: ", n2, raizCubicaN2);
+        printf("\n");
+    break;
+
     default:
     break;
     }
+}
 
     printf("\n");
     system("pause");
