@@ -12,3 +12,34 @@
  * Valide as entradas - nao aceite numeros menores que zero
  * Mostre na tela os numeros impares e pares informados
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+ int main(int argc, char const *argv[])
+ {
+
+    int option;
+    int n1, n2;
+    
+    printf("********************************* \n");
+    printf("*       CALULADORA BASICA       * \n");
+    printf("* ESCOLHA UMA DAS OPCOES ABAIXO * \n");
+    printf("* [ 1 ] SOMA * \n");
+    printf("* [ 2 ] SUBTRACAO * \n");
+    printf("* [ 3 ] MULTIPLICACAO * \n");
+    printf("* [ 4 ] DIVISAO * \n");
+    printf("* [ 5 ] QUADRADO * \n");
+    printf("* [ 6 ] RAIZ QUADRADA \n");
+    printf("* [ 7 ] RAIZ CUBIDA \n");
+    printf("* [ 8 ] RESTO DA SOMA \n");
+    printf("* [ 9 ] MAIS INFORMACOES \n");
+    printf("* [ 0 ] SAIR");
+    scanf("%d", &option);
+    
+
+    printf("\n");
+    system("pause");
+    return 0;
+ }
+ 
