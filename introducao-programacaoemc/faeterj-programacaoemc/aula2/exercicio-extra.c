@@ -155,6 +155,24 @@
         printf("\n");
     break;
 
+    //resto da soma de dois valores
+    case 8:
+        printf("* INSIRA DOIS NUMEROS A SEGUIR * \n");
+        printf("* Numero 1: ");
+        scanf("%d", &n1);
+
+        printf("* Numero 2: ");
+        scanf("%d", &n2);
+
+        int resto = (n1 + n2);
+
+        if(resto % 2 == 0){
+            printf("O resto da soma dos numeros informados é PAR \n");
+        }else{
+            printf("O resto da soma dos numeros informados é IMPAR \n");
+        }
+    break;
+
     default:
     break;
     }
