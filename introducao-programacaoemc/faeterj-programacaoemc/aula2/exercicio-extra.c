@@ -11,5 +11,4 @@
  * (0) - Sair
  * Valide as entradas - nao aceite numeros menores que zero
  * Mostre na tela os numeros impares e pares informados
- *  
  */

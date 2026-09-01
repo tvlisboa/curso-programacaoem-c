@@ -11,3 +11,34 @@
  * Abaixo de 0 - frio extremo - pretecao
  * Mostre na tela as informacoes uteis
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+
+ int main(int argc, char const *argv[])
+ {
+
+    char nomeCidade[100];
+    double temperaturaLocal;
+
+    printf("************************************ \n");
+    printf("*     APP DE TEMPERATURA LOCAL     * \n");
+    printf("* Informe nome da cidade: ");
+    scanf("%s", nomeCidade);
+
+    printf("* Temperatura local em C: ");
+    scanf("%lf", &temperaturaLocal);
+
+    /* saida de dados */
+    printf("************************************ \n");
+    printf("*  DADOS INFORMADOS PELO USUARIO   * \n");
+    printf("************************************ \n");
+    printf("%s" , nomeCidade);
+    printf("\n");
+    printf("%.2lf", temperaturaLocal);
+    printf("\n");
+    system("pause");
+    return 0;
+ }
+ 
