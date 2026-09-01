@@ -18,7 +18,6 @@
  #include <stdlib.h>
  #include <string.h>
 
-
  int main(int argc, char const *argv[])
  {
 
@@ -45,7 +44,6 @@
         scanf("%d", &idade);
     }
     
-
     printf("* Altura do usuario: ");
     scanf("%lf", &altura);
 
