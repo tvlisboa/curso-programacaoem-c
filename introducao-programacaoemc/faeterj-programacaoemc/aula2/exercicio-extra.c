@@ -23,22 +23,23 @@
     int option;
     int n1, n2;
     
-    do {
+    //enquanto meu usuario nao apertar 0 - continua dentro das opcoes informadas
+    do {                                    
 
     system("clear");
-    printf("********************************* \n");
-    printf("*       CALULADORA BASICA       * \n");
-    printf("* ESCOLHA UMA DAS OPCOES ABAIXO * \n");
-    printf("* [ 1 ] SOMA * \n");
-    printf("* [ 2 ] SUBTRACAO * \n");
-    printf("* [ 3 ] MULTIPLICACAO * \n");
-    printf("* [ 4 ] DIVISAO * \n");
-    printf("* [ 5 ] QUADRADO * \n");
-    printf("* [ 6 ] RAIZ QUADRADA \n");
-    printf("* [ 7 ] RAIZ CUBIDA \n");
-    printf("* [ 8 ] RESTO DA SOMA \n");
+    printf("******************************************** \n");
+    printf("*   CALCULADORA BASICA COM SWITCH - CASE   * \n");
+    printf("*     ESCOLHA  UMA  DAS  OPCOES  ABAIXO    * \n");
+    printf("* [ 1 ] SOMA\n");
+    printf("* [ 2 ] SUBTRACAO\n");
+    printf("* [ 3 ] MULTIPLICACAO\n");
+    printf("* [ 4 ] DIVISAO\n");
+    printf("* [ 5 ] NUMEROS INFORMADOS AO QUADRADO\n");
+    printf("* [ 6 ] RAIZ QUADRADA DOS NUMEROS INFORMADOS\n");
+    printf("* [ 7 ] RAIZ CUBIDA DOS NUMEROS INFORMADOS\n");
+    printf("* [ 8 ] RESTO DA SOMA DOS NUMEROS\n");
     printf("* [ 9 ] MAIS INFORMACOES \n");
-    printf("* [ 0 ] SAIR \n");
+    printf("* [ 0 ] SAIR DO APP \n");
     scanf("%d", &option);
 
     switch (option) {
@@ -151,8 +152,8 @@
         double raizCubicaN2 = cbrt(n2);        //fnc calcula raiz cubica
 
         printf("\n");
-        printf("A raiz cubica de %.d\n é %.2lf\n: ", n1, raizCubicaN1);
-        printf("A raiz cubica de %.d\n é %.2lf\n: ", n2, raizCubicaN2);
+        printf("A raiz cubica de %d\n é %.2lf\n: ", n1, raizCubicaN1);
+        printf("A raiz cubica de %d\n é %.2lf\n: ", n2, raizCubicaN2);
         printf("\n");
     break;
 
@@ -168,21 +169,36 @@
         int resto = (n1 + n2);
 
         if(resto % 2 == 0){
-            printf("O resto da soma dos numeros informados é PAR \n");
+            printf("O resto da soma dos numeros informados é PAR %d: \n" , resto);
         }else{
-            printf("O resto da soma dos numeros informados é IMPAR \n");
+            printf("O resto da soma dos numeros informados é IMPAR %d: \n" , resto);
         }
     break;
 
     //mais informacoes
     case 9:
+    do
+    {
+        system("clear");
         printf("********************************* \n");
         printf("*       CALULADORA BASICA       * \n");
-        printf("* SECAO MAIS INFORMACOES ABAIXO * \n");
+        printf("*     SECAO MAIS INFORMACOES    * \n");
         printf("*      HISTORIA DOS NUMEROS     * \n");
         printf("*    CONVERSAO  DE  BINARIOS    * \n");
         printf("*  ESTRUTURA DE DADOS NUMERICOS * \n");
         printf("********************************* \n");
+        
+
+        switch (option)
+        {
+        case constant expression:
+            /* code */
+            break;
+        
+        default:
+            break;
+        }
+    } while (option!=0);
     break;
 
     //sair
