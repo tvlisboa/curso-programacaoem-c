@@ -180,22 +180,40 @@
     do
     {
         system("clear");
-        printf("********************************* \n");
-        printf("*       CALULADORA BASICA       * \n");
-        printf("*     SECAO MAIS INFORMACOES    * \n");
-        printf("*      HISTORIA DOS NUMEROS     * \n");
-        printf("*    CONVERSAO  DE  BINARIOS    * \n");
-        printf("*  ESTRUTURA DE DADOS NUMERICOS * \n");
-        printf("********************************* \n");
+        printf("******************************************\n");
+        printf("*       CALULADORA BASICA                *\n");
+        printf("*     SECAO MAIS INFORMACOES             *\n");
+        printf("*  [ 1 ] - HISTORIA DOS NUMEROS          *\n");
+        printf("*  [ 2 ] - CONVERSAO  DE  BINARIOS       *\n");
+        printf("*  [ 3 ] - ESTRUTURA DE DADOS NUMERICOS  *\n");
+        printf("*  [ 4 ] - BASES NUMERICAS               *\n");
+        printf("*  [ 0 ] - SAIR                          *\n");
+        printf("******************************************\n");
         
 
         switch (option)
         {
-        case constant expression:
-            /* code */
+        case 1:
+            printf(" [ 1 ] - Historia dos numeros \n");
+            break;
+
+        case 2:
+            printf(" [ 2 ] - Conversao de binarios \n");
+            break;
+
+        case 3:
+            printf(" [ 3 ] - Estrutura de dados numericos:");
             break;
         
+        case 4:
+            printf("  [ 4 ] - Bases numericas: ");
+            break;
+
+        case 0:
+            printf(" [ 0 ] - Sair do App");
+            break;
         default:
+            printf(" OPCAO INFORMADA E INVALIDA - TENTE NOVAMENTE ! \n");
             break;
         }
     } while (option!=0);
@@ -207,6 +225,10 @@
         printf("* SAIR - OBRIGADO POR USAR NOSSOS SISTEMAS * \n");
         printf("******************************************** \n");
     break;
+
+    default:
+        printf(" OPCAO INFORMADA E INVALIDA - TENTE NOVAMENTE ! \n");
+        break;
     }
         
     } while (option != 0);
