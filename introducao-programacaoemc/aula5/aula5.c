@@ -11,13 +11,13 @@
 
 int main(){
 
-    float n1, n2, n3, n4;
+    float n1, n2, n3, n4;                                           //declaracao de variaveis na mesma linha
     float media;
 
     /* dados do aluno */
     printf("Informe as 4 notas do aluno a seguir: \n");
         printf("Nota 1: ");
-        scanf("%f" , &n1);
+        scanf("%f" , &n1);                                          //utilização do "%f" - pois estamos lidando com um tipo de variavel float
 
         printf("Nota 2: ");
         scanf("%f" , &n2);
@@ -30,8 +30,7 @@ int main(){
 
     media = (n1 + n2 + n3 + n4) /4;
 
-    /* utilizando %.1f\n - formata com duas casas decimais apos a virgula*/
-    printf("Media final do aluno: %.2f\n" , media);
+    printf("Media final do aluno: %.2f\n" , media);                 // utilizando %.2f\n - formata com duas casas decimais apos a virgula - como usamos o tipo de variavel float - precisamos utilizar "%.2f\n"
 
         /* verificar a media - aprovado - recuperacao ou reprovado */
         if(media>=7){
