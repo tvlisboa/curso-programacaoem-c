@@ -26,32 +26,33 @@ int main(int argc, char const *argv[])
     printf("\n");
     
     printf("* Insira as informações do motorista a seguir * \n");
-    printf("* Nome do motorista: ");
+    printf("* NOME DO MOTORISTA: ");
     scanf("%s", nomeMotorista);
 
-    printf("Ano de nascimento do motorista: ");
+    printf("* ANO DE NASCIMENTO DO MOTORISTA: ");
     scanf("%d", &anoNascimento);
 
-    printf("Ano atual: ");
+    printf("* ANO ATUAL: ");
     scanf("%d", &anoAtual);
 
     /* nao aceita dados se o ano nascimento for maior que o ano atual*/
     while (anoNascimento >= anoAtual)
     {
-        printf("Os dados informados estao incorretos - tente novamente \n");
-        
-        printf("Ano de nascimento do motorista: ");
+        printf("* OS DADOS INFORMADOS ESTAO INCORRETOS - POR FAVOR TENTE NOVAMENTE *\n");
+        printf("* ANO DE NASCIMENTO DO MOTORISTA: ");
         scanf("%d", &anoNascimento);
 
-        printf("Ano atual: ");
+        printf("* ANO ATUAL: ");
         scanf("%d", &anoAtual);
     }
 
     idadeMOtorista = (anoAtual - anoNascimento);
 
     if(idadeMOtorista>=18){
+        printf("\n");
         printf("Usuario informado - está apto a dirigir \n");
     }else{
+        printf("\n");
         printf("Usuario informado - não está apto a dirigir \n");
     }
     
@@ -62,10 +63,10 @@ int main(int argc, char const *argv[])
   
     /* teste de saida de dados do usuario */
     printf("********************************* \n");
-    printf("Nome do motorista: %s\n" , nomeMotorista);
-    printf("Ano de nascimento: %d\n", anoNascimento);
-    printf("Ano atual: %d\n", anoAtual);
-    printf("Idade do motorista: %d\n " , idadeMOtorista);
+    printf("* NOME DO MOTORISTA: %s\n" , nomeMotorista);
+    printf("* ANO DE NASCIMENTO: %d\n", anoNascimento);
+    printf("* ANO ATUAL: %d\n", anoAtual);
+    printf("* IDADE DO MOTORISTA: %d\n " , idadeMOtorista);
     printf("********************************* \n");
     system("pause");
     return 0;
