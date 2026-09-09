@@ -39,6 +39,54 @@
     case 1:
         system("cls");
         printf("* [ 1 ] - OPCAO ESCOLHIDA : FINANCEIRO * \n");
+        printf("*    SELECIONE UMA DAS OPCOES ABAIXO   * \n");
+        printf("*        UTILIZE O MENU A SEGUIR       * \n");
+        printf("[ 1 ] - CONTAS A PAGAR \n");
+        printf("[ 2 ] - CONTAS A RECEBER \n");
+        printf("[ 3 ] - REGISTRO DE PAGAMENTOS \n");
+        printf("[ 4 ] - EMISSAO DE BOLETOS \n");
+        printf("[ 9 ] - VOLTAR \n");
+        printf("[ 0 ] - SAIR \n");
+        scanf("%d" , &option);
+
+        switch (option)
+        {
+        case 1:
+            system("cls");
+            printf("* CONTAS A PAGAR *\n");
+            break;
+
+        case 2:
+            system("cls");
+            printf("* CONTAS A RECEBER *\n");
+            break;
+
+        case 3:
+            system("cls");
+            printf("* REGISTRO DE PAGAMENTOS *\n");
+            break;
+
+        case 4:
+            system("cls");
+            printf("* EMISSAO DE BOLETOS *\n");
+            break;
+
+        case 9:
+            system("cls");
+            printf("* VOLTAR * \n");
+            break;
+
+        case 0:
+            system("cls");
+            printf("* SAIR * \n");
+            break;
+
+        default:
+            system("cls");
+            printf("* OPCAO INFORMADA E INVALIDA - TENTE NOVAMENTE * \n");
+            break;
+        }
+
         break;
     
     case 2:
@@ -83,6 +131,6 @@
 
 
     system("pause");
-    return;
+    return 0;
  }
  
