@@ -32,8 +32,48 @@
     {
 
     case 1:
-        system("cls");
         printf("Dias da semana selecionado[...] \n");
+        printf("* SELECIONE UMA DAS OPCOES ABAIXO * \n");
+        printf("*     UTILIZE O MENU A SEGUIR     * \n");
+        printf("[ 2 ] - SEGUNDA-FEIRA \n");
+        printf("[ 3 ] - TERCA-FEIRA \n");
+        printf("[ 4 ] - QUARTA-FEIRA \n");
+        printf("[ 5 ] - QUINTA-FEIRA \n");
+        printf("[ 6 ] - SEXTA-FEIRA \n");
+        printf("[ 9 ] - VOLTAR \n");
+        printf("[ 0 ] - SAIR \n");
+
+        /* utilizando switch-case aninhado  */
+        switch (option)
+        {
+
+        case 2:
+            printf("* DIAS DE SEMANA SELECIONADO * \n");
+            printf("* [ 2 ] - SEGUNDA-FEIRA \n");
+            break;
+
+        case 3:
+            printf("* DIAS DE SEMANA SELECIONADO * \n");
+            printf("* [ 3 ] - TERCA-FEIRA \n");
+            break;
+
+        case 4:
+            printf("* DIAS DE SEMANA SELECIONADO * \n");
+            printf("* [ 4 ] - QUARTA-FEIRA \n");
+            break;
+
+        case 9:
+            printf("* VOLTAR * \n");
+            break;
+
+        case 0:
+            printf("* [ 0 ] - SAIR DO APP * \n");
+            break;
+        
+        default:
+            printf(" OPCAO INFORMADA É INVALIDA - TENTE NOVAMENTE \n");
+            break;
+        }
         break;
     
     case 2:
