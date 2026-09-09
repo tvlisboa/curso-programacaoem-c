@@ -32,6 +32,7 @@
     {
 
     case 1:
+        system("cls");
         printf("Dias da semana selecionado[...] \n");
         printf("* SELECIONE UMA DAS OPCOES ABAIXO * \n");
         printf("*     UTILIZE O MENU A SEGUIR     * \n");
@@ -42,41 +43,49 @@
         printf("[ 6 ] - SEXTA-FEIRA \n");
         printf("[ 9 ] - VOLTAR \n");
         printf("[ 0 ] - SAIR \n");
+        scanf("%d", &option);
 
         /* utilizando switch-case aninhado  */
         switch (option)
         {
 
         case 2:
+            system("cls");
             printf("* DIAS DE SEMANA SELECIONADO * \n");
             printf("* [ 2 ] - SEGUNDA-FEIRA \n");
             break;
 
         case 3:
+            system("cls");
             printf("* DIAS DE SEMANA SELECIONADO * \n");
             printf("* [ 3 ] - TERCA-FEIRA \n");
             break;
 
         case 4:
+            system("cls");
             printf("* DIAS DE SEMANA SELECIONADO * \n");
             printf("* [ 4 ] - QUARTA-FEIRA \n");
             break;
 
         case 9:
+            system("cls");
             printf("* VOLTAR * \n");
             break;
 
         case 0:
+            system("cls");
             printf("* [ 0 ] - SAIR DO APP * \n");
             break;
         
         default:
+            system("cls");
             printf(" OPCAO INFORMADA É INVALIDA - TENTE NOVAMENTE \n");
             break;
         }
         break;
     
     case 2:
+        system("cls");
         printf("Finais de semana selecionado[...] \n");
         printf("* SELECIONE UMA DAS OPCOES ABAIXO * \n");
         printf("*     UTILIZE O MENU A SEGUIR     * \n");
@@ -84,28 +93,35 @@
         printf("[ 8 ] - DOMINGO \n");
         printf("[ 9 ] - VOLTAR \n");
         printf("[ 0 ] - SAIR \n");
+        scanf("%d", &option);
 
         switch (option)
         {
+
         case 7:
+            system("cls");
             printf("* FINAIS DE SEMANA SELECIONADO * \n");
             printf("* [ 7 ] - SABADO \n");
             break;
 
         case 8:
+            system("cls");
             printf("* FINAIS DE SEMANA SELECIONADO * \n");
             printf("* [ 8 ] - DOMINGO \n");
             break;
 
        case 9:
+            system("cls");
             printf("* [ 9 ] - VOLTAR * \n");
             break;
 
         case 0:
+            system("cls");
             printf("* [ 0 ] - SAIR DO APP * \n");
             break;
         
         default:
+            system("cls");
             printf(" OPCAO INFORMADA É INVALIDA - TENTE NOVAMENTE \n");
             break;
         }
