@@ -38,7 +38,9 @@
     {
     case 1:
         system("cls");
+        printf("**************************************** \n");
         printf("* [ 1 ] - OPCAO ESCOLHIDA : FINANCEIRO * \n");
+        printf("**************************************** \n");
         printf("*    SELECIONE UMA DAS OPCOES ABAIXO   * \n");
         printf("*        UTILIZE O MENU A SEGUIR       * \n");
         printf("[ 1 ] - CONTAS A PAGAR \n");
@@ -54,6 +56,25 @@
         case 1:
             system("cls");
             printf("* CONTAS A PAGAR *\n");
+            /*
+             * Utilizar menu a seguir
+             1 - Buscar contas
+                1.1 - ID DA CONTA
+                1.2 - DESCRICAO
+                1.3 - VALOR
+                1.4 - DIA DE EMISSAO DA CONTA
+                1.5 - DATA DE VENCIMENTO
+                1.6 - TITULAR DA CONTA
+                1.7 - STATUS
+             2 - Registrar contas
+                2.1 - ID DA CONTA
+                2.2 - VALOR
+                2.3 - TITULAR
+             3 - Baixar contas
+                3.1 - ID DA CONTA
+                3.2 - CONFIRMAR BAIXA
+             4 - Conferir vecimentos
+             */
             break;
 
         case 2:
@@ -64,6 +85,14 @@
         case 3:
             system("cls");
             printf("* REGISTRO DE PAGAMENTOS *\n");
+            /* 1 - PAGAMENTO DE ENERGIA ELETRICA
+             * 2 - PAGAMENTO DE INTERNET
+             * 3 - PAGAMENTO DE ALUGUEL
+             * 4 - FORNECEDORES
+             * 5 - SALARIOS
+             * 9 - MAIS OPCOES
+             * 0 - VOLTAR
+             */
             break;
 
         case 4:
