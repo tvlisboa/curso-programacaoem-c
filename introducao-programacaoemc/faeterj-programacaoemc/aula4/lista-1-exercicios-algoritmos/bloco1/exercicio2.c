@@ -20,6 +20,7 @@
     char nomeAnimal[100];               //nome do animal
     int idadeAnimal;                    //anos
     int anoNascimento;                  //data do nascimento do animal
+    int anoAtual;                       //ano atual para calclar idade
     char corAnimal;                     //tipos de cores
     double pesoAnimal;              
     double alturaAnimal;
@@ -62,14 +63,47 @@
         printf("* Nome do animal: ");
         scanf("%s", nomeAnimal);
 
-        printf("* Ano de nascimento: ");
+        printf("* Ano atual: *");
+        scanf("%d", &anoAtual);
+
+        printf("* Ano de nascimento do animal: ");
         scanf("%d", &anoNascimento);
 
         printf("* Pelagem do animal: ");
         scanf("%s", corAnimal);
 
-        printf("* Ano de nascimento do animal: ");
-        scanf("%d", &anoNascimento);
+        printf("* Altura do animal: ");
+        scanf("%lf", &alturaAnimal);
+
+        printf("* Peso do animal: ");
+        scanf("%lf", &pesoAnimal);
+
+        printf("* Sexo do animal: ");
+        printf("%s", sexoAnimal);
+
+        //calcular idade do animal - nao aceitar anonascimento maior que ano atual
+        idadeAnimal = (anoAtual - anoNascimento);
+
+        //fazer as validacoes de idade - animal jovem - adulto - idoso - pronto para criar etc
+
+        /* teste de saida de dados */
+        printf("***************************************** \n");
+        printf("*   DADOS INFORMADOS PELO VETERINÁRIO:  * \n");
+        printf("* Nome: %s" , nomeAnimal);
+        printf("\n");
+        printf("* Ano de nascimento: %d", anoNascimento);
+        printf("\n");
+        printf("* Idade: %d", idadeAnimal);
+        printf("\n");
+        printf("* Pelagem: %s", corAnimal);
+        printf("\n");
+        printf("* Altura: %lf", alturaAnimal);
+        printf("\n");
+        printf("* Peso: %lf", pesoAnimal);
+        printf("\n");
+        printf("* Sexo: %lf", sexoAnimal);
+        printf("\n");
+        printf("***************************************** \n");
         break;
     
     //consultar estoque de ferraduras
@@ -136,4 +170,3 @@
     system("pause");
     return 0;
  }
- 
