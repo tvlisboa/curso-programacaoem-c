@@ -17,6 +17,14 @@
     int ferradurasAnimal;               //quantas ferraduras cada animal gasta
     int totalFerraduras;                //total gasto de ferraduras por animal
     double valorTotalFerraduras;        //total em dinheiro gasto por ferraduras
+    char nomeAnimal[100];               //nome do animal
+    int idadeAnimal;                    //anos
+    int anoNascimento;                  //data do nascimento do animal
+    char corAnimal;                     //tipos de cores
+    double pesoAnimal;              
+    double alturaAnimal;
+    char sexoAnimal[2];                 //macho ou femea    
+    int codigoAnimal;                   //codigo do animal
 
     printf("***************************************** \n");
     printf("*   HARAS - BOM COMPANHEIRO , BEMVINDO  * \n");
@@ -34,37 +42,64 @@
     switch (option)
     {
 
+    //consultar animais
     case 1:
         system("cls");
         printf("***************************************** \n");
         printf("* [ 1 ] - OPCAO ESCOLHIDA : CONSULTA DE ANIMAIS * \n");
         printf("* INSIRA AS INFORMACOES DO ANIMAL A SEGUIR: * \n");
+        printf("* Codigo do animal :");
+        scanf("%d", &codigoAnimal);
         break;
     
+    //cadastrar animais
     case 2:
         system("cls");
         printf("***************************************** \n");
         printf("* [ 2 ] - OPCAO ESCOLHIDA : CADASTRO DE ANIMAIS * \n");
         printf("* INSIRA AS INFORMACOES DO ANIMAL A SEGUIR: * \n");
+
+        printf("* Nome do animal: ");
+        scanf("%s", nomeAnimal);
+
+        printf("* Ano de nascimento: ");
+        scanf("%d", &anoNascimento);
+
+        printf("* Pelagem do animal: ");
+        scanf("%s", corAnimal);
+
+        printf("* Ano de nascimento do animal: ");
+        scanf("%d", &anoNascimento);
         break;
     
+    //consultar estoque de ferraduras
     case 3:
         system("cls");
         printf("* [ 3 ] - OPCAO ESCOLHIDA : CONSULTA DE ESTOQUE * \n");
         break;
     
+    //cadastrar estoque de produtos
     case 4:
         system("cls");
         printf("* [ 4 ] - OPCAO ESCOLHIDA : CADASTRO DE PRODUTOS * \n");
         break;
 
+    //opcao de orcamento - podendo cadastrar - excluir - consultar e editar
     case 5:
         system("cls");
         printf("* [ 5 ] - OPCAO ESCOLHIDA : ORCAMENTOS * \n");
-        //1 SALVAR ORCAMENTO 
-        //2 EXCUIR ORCAMENTO
-        //3 CANCELAR ORCAMENTO
-        //4 NOVO ORCAMENTO
+        printf("* *");
+
+        /**
+         * 1 - NOVO ORCAMENTO
+         * 2 - CANCELAR ORCAMENTO
+         * 3 - EXCLUIR ORCAMENTO 
+         * 4 - EDITAR ORCAMENTO
+         * 5 - PESQUISAR 
+         * 9 - MAIS OPCOES
+         * 0 - SAIR
+         */
+        
         printf("* Numero de animais disponiveis no haras ? ");
         scanf("%d", &cavalos);
 
@@ -76,17 +111,19 @@
 
         //valor total de ferraduras gastas por animal
         totalFerraduras = cavalos * ferradurasAnimal;
-        //5 PEQUISAR
-        //9 MAIS OPCOES
-        //0 SAIR
+
         break;
 
+    //outras opcoes do aplicativo
     case 9:
         system("cls");
-        printf("* [ 9 ] - OPCAO ESCOLHIDA : ORCAMENTOS * \n");
+        printf("* [ 9 ] - OPCAO ESCOLHIDA : MAIS OPCOES * \n");
         break;
 
+    //sair do app
     case 0:
+        system("cls");
+        printf("* [ 0 ] - OPCAO ESCOLHIDA : SAIR DO APP * \n");
         break;
     
     default:
