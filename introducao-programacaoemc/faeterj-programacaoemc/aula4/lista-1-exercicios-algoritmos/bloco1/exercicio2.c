@@ -21,11 +21,17 @@
     printf("***************************************** \n");
     printf("*   HARAS - BOM COMPANHEIRO , BEMVINDO  * \n");
     printf("*     SELECIONE UMA DAS OPCOES ABAIXO   * \n");
-    printf("* *");
     printf("***************************************** \n");
+    printf("* [ 1 ] - CONSULTA DE ANIMAIS  * \n");
+    printf("* [ 2 ] - CADASTRO DE ANIMAIS  * \n");
+    printf("* [ 3 ] - CONSULTA DE ESTOQUE  * \n");
+    printf("* [ 4 ] - CADASTRO DE PRODUTOS * \n");
+    printf("* [ 5 ] - ORCAMENTOS  * \n");
+    printf("* [ 9 ] - MAIS OPCOES * \n");
+    printf("* [ 0 ] - SAIR * \n");
+    scanf("%d", &option);
 
-
-
+    
     system("pause");
     return 0;
  }
