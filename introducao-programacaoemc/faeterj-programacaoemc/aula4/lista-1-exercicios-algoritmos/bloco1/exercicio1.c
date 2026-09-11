@@ -13,6 +13,8 @@
      double alturaTerreno;
      double comprimentoTerreno;
      double areaTerreno;
+     double valorMetro;
+     double valorTotal;
 
      printf("******************************* \n");
      printf("* SISTEMA DE CALCULO DE AREA  * \n");
@@ -25,7 +27,11 @@
      printf("* Comprimento do terreno : ");
      scanf("%lf", &comprimentoTerreno);
 
+     printf("* Valor do metro quadrado: ");
+     scanf("%lf", &valorMetro);
+
      areaTerreno = ( alturaTerreno * comprimentoTerreno);
+     valorTotal = (valorMetro * areaTerreno);
 
      /* teste de saida de dados */
      printf("\n");
@@ -38,6 +44,8 @@
      printf("* Area total do terreno : %.4f" , areaTerreno);
      printf("\n");
 
+     printf("* Valor total do terreno: %.5f", valorTotal);
+     printf("\n");
      printf(" * FIM DO ALGORITMO * \n");
      printf("******************************* \n");
 
