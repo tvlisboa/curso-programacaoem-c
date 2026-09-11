@@ -4,7 +4,6 @@
  * Como area do terreno - valor por metro e valor total
  */
 
-
  #include <stdio.h>
  #include <stdlib.h>
 
