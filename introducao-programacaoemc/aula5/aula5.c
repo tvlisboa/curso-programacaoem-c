@@ -30,15 +30,19 @@ int main(){
 
     media = (n1 + n2 + n3 + n4) /4;
 
-    printf("Media final do aluno: %.2f\n" , media);                 // utilizando %.2f\n - formata com duas casas decimais apos a virgula - como usamos o tipo de variavel float - precisamos utilizar "%.2f\n"
-
         /* verificar a media - aprovado - recuperacao ou reprovado */
         if(media>=7){
             printf("\nAluno aprovado. \n");
+            printf("Media final: %.2f" , media);
+            printf("\n");
         }else if(media>=5){
             printf("Aluno em recuperacao. \n");
+            printf("Media final: %.2f" , media);
+            printf("\n");
         }else{
             printf("Aluno em reprovado. \n");
+            printf("Media final: %.2f" , media);
+            printf("\n");
         }
 
     system("pause");
