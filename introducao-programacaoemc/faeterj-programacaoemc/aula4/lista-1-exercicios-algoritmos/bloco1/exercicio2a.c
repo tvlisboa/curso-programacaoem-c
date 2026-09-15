@@ -31,7 +31,7 @@
     scanf("%lf" , &valorFerradura);
 
     quantidadeTotalFerraduras = quantidadeCavalos * quantidadeFerraduras;
-    totalGasto = quantidadeFerraduras * valorFerradura;
+    totalGasto = quantidadeTotalFerraduras * valorFerradura;
 
     /* teste de saida de dados */
     printf("Quantidade de animais: %d", quantidadeCavalos);
@@ -43,6 +43,7 @@
     printf("Valor unitario da ferradura: %.2lf", valorFerradura);
     printf("\n");
     printf("Valor total gasto em ferraduras: %.2lf", totalGasto);
+    printf("\n");
 
     system("pause");
     return 0;
