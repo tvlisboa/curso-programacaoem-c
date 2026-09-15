@@ -39,7 +39,9 @@
  {
 
     double valorPaoFrances;
+    double quantidadePaoFrances;
     double valorBroinha;
+    double quantidadeBroinha;
   
     printf("************************* \n");
     printf("*    PADARIA  HOTPAO    * \n");
@@ -50,8 +52,16 @@
     printf("* PAO FRANCES UNIDADE : ");
     scanf("%lf" , &valorPaoFrances);
 
-    printf("* BROINHA DE MILHO: * ");
+    printf("* QUANTIDADE DE PRODUTOS * \n");
+    printf("* PAO FRANCES: ");
+    scanf("%lf", quantidadePaoFrances);
+
+    printf("* BROINHA DE MILHO UNIDADE: * ");
     scanf("%lf" , &valorBroinha);
+
+    printf("* QUANTIDADE DE PRODUTOS * \n");
+    printf("* BROINHA DE MILHO: ");
+    scanf("%lf", &quantidadeBroinha);
 
     /* teste de saida de dados */
     printf("Pao frances: %lf" , valorPaoFrances);
