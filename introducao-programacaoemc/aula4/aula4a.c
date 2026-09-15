@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
     printf("* Ano atual : ");
     scanf("%d", &anoAtual);
 
-    while (anoNascimento>anoAtual) {
+    while (anoAtual<anoNascimento) {
         printf("Dados informados estao incorretos - tente novamente \n");
 
         printf("* Ano de nascimento : ");
@@ -44,11 +44,14 @@ int main(int argc, char const *argv[])
 
     idade = anoAtual - anoNascimento;
 
-    /* teste de saida de dados */
-    printf("Ano de nascimento %d", anoNascimento);
-    printf("\n");
-    printf("Ano atual %d", anoAtual);
-    printf("\n");
+    if (idade>=60) {
+        printf("Ano de nascimento do usuario: %d", anoNascimento);
+        printf("\n");
+        printf("Ano atual: %d", anoAtual);
+        printf("\n");
+        printf("Idade do usuário: %d", idade);
+        printf("Usuário informado é idoso \n");
+    }
 
     system("pause");
     return 0;
