@@ -11,9 +11,9 @@
  {
      double alturaTerreno;
      double comprimentoTerreno;
-     double areaTerreno;
-     double valorMetro;
-     double valorTotal;
+     double areaTerreno;                            // altura * comprimento
+     double valorMetro;                             // valor por metro quadrado
+     double valorTotal;                             // area do terreno * valor por metro quadrado
 
      printf("******************************* \n");
      printf("* SISTEMA DE CALCULO DE AREA  * \n");
