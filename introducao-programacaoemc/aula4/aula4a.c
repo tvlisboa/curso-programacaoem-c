@@ -50,7 +50,32 @@ int main(int argc, char const *argv[])
         printf("Ano atual: %d", anoAtual);
         printf("\n");
         printf("Idade do usuário: %d", idade);
+        printf("\n");
         printf("Usuário informado é idoso \n");
+    }else if(idade>=18){
+        printf("Ano de nascimento do usuario: %d", anoNascimento);
+        printf("\n");
+        printf("Ano atual: %d", anoAtual);
+        printf("\n");
+        printf("Idade do usuário: %d", idade);
+        printf("\n");
+        printf("Usuário informado é adulto \n");
+    }else if(idade>=16){
+        printf("Ano de nascimento do usuario: %d", anoNascimento);
+        printf("\n");
+        printf("Ano atual: %d", anoAtual);
+        printf("\n");
+        printf("Idade do usuário: %d", idade);
+        printf("\n");
+        printf("Usuário informado é adolescente \n");
+    }else{
+        printf("Ano de nascimento do usuario: %d", anoNascimento);
+        printf("\n");
+        printf("Ano atual: %d", anoAtual);
+        printf("\n");
+        printf("Idade do usuário: %d", idade);
+        printf("\n");
+        printf("Usuário informado é crianca \n");
     }
 
     system("pause");
