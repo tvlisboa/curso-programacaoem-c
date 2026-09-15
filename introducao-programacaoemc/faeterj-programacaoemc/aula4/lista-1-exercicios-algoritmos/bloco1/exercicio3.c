@@ -20,3 +20,45 @@
  // 2 - Valor da broinha
  // 3 - Quantidade de pao frances
  // 4 - Quantidade de broinha
+
+ /**
+  * Implementacao de menus futuros
+  * 1 - Controle de estoque
+  * 2 - Caixa
+  * 3 - Pedidos
+  * 4 - Entrada de mercadorias
+  * 5 - Baixa de estoque
+  * 9 - Mais opcoes
+  * 0 - Sair
+  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+ int main(int argc, char const *argv[])
+ {
+
+    double valorPaoFrances;
+    double valorBroinha;
+  
+    printf("************************* \n");
+    printf("*    PADARIA  HOTPAO    * \n");
+    printf("*   SITEMA DE ESTOQUE   * \n");
+    printf("************************* \n");
+
+    printf("* INFORME O VALOR DOS PRODUTOS A SEGUIR * \n");
+    printf("* PAO FRANCES UNIDADE : ");
+    scanf("%lf" , &valorPaoFrances);
+
+    printf("* BROINHA DE MILHO: * ");
+    scanf("%lf" , &valorBroinha);
+
+    /* teste de saida de dados */
+    printf("Pao frances: %lf" , valorPaoFrances);
+    printf("\n");
+    printf("Broinha: %lf" , valorBroinha);
+    printf("\n");
+    system("pause");
+    return 0;
+ }
+ 
