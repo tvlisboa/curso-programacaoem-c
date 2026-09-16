@@ -19,13 +19,13 @@
  #include <stdlib.h>
  #include <math.h>
 
-
  int main(int argc, char const *argv[])
  {
     int n1, n2;
     int opcao;
     int soma, subtracao;
     double divisao, mutiplicacao;
+    double potenciacao1, potenciacao2, potenciacaoTotal;
 
     printf("********************************** \n");
     printf("*    CALCULADORA - SWITH CASE    * \n");
@@ -85,12 +85,8 @@
             printf("\n");
         break;
 
-        case 3:             //NAO PERMITIR DIVISAO POR ZERO - TESTAR
-
-        if (n2 == 0) {
-            printf("* ERROR : Divisao por zero nao é permitida - tente novamente !\n");
-        }else{
-            divisao = n1 / n2;
+         //NAO PERMITIR DIVISAO POR ZERO - TESTAR
+        case 3:
             system("cls");
             printf("* OPCAO ESCOLHIDA - DIVISAO * \n");
             printf("* Numero informados pelo usuario: \n");
@@ -98,7 +94,6 @@
             printf("* Numero 2: %d\n", n2); 
             printf("* A DIVISAO DOS NUMEROS INFORMADOS É: %d" , divisao);
             printf("\n");
-        }
         
         break;
 
@@ -127,33 +122,32 @@
         break;
 
         case 6:
-        //potenciacao n1
-        //potenciacao n2
-        //potenciacao total
-        //calcular a potenciacao de cada numero - somar e mostrar na tela
+        potenciacao1 = pow(n1, n1);
+        potenciacao2 = pow(n2, n2);
+        potenciacaoTotal = potenciacao1 + potenciacao2;
             system("cls");
             printf("* OPCAO ESCOLHIDA - POTENCIACAO DOS NUMEROS * \n");
             printf("* Numero informados pelo usuario: \n");
             printf("* Numero 1: %d\n", n1);
             printf("* Numero 2: %d\n", n2); 
-            printf("* Potenciacao do numero 1 %d\n :");
-            printf("* Potenciacao do numero 2 %d\n :");
-            printf("* A POTENCIACAO TOTAL DOS NUMEROS INFORMADOS É: %d");
+            printf("* Potenciacao do numero 1 %d\n :" , potenciacao1);
+            printf("* Potenciacao do numero 2 %d\n :" , potenciacao2);
+            printf("* A POTENCIACAO TOTAL DOS NUMEROS INFORMADOS É: %d" , potenciacaoTotal);
             printf("\n");
         break;
 
-        case 7:
-        //resto_n1 = n1 % 2
-        //resto_n2 = n2 % 2 
-        //resto_total = (n1 + n2) % 2
+        case 7:                 
+        double resto1 = n1 % 2;
+        double resto2 = n2 % 2;
+        double restototal = n1 + n2;
             system("cls");
             printf("* OPCAO ESCOLHIDA - RESTO * \n");
             printf("* Numero informados pelo usuario: \n");
             printf("* Numero 1: %d\n", n1);
             printf("* Numero 2: %d\n", n2); 
-            printf("* Resto do numero 1 %d\n :");
-            printf("* Resto do numero 2 %d\n :");
-            printf("* A SOMA DOS RESTO TOTAL DOS NUMEROS INFORMADOS É: %d");
+            printf("* Resto do numero 1 %d\n :" , resto1);
+            printf("* Resto do numero 2 %d\n :" , resto2);
+            printf("* A SOMA DOS RESTO TOTAL DOS NUMEROS INFORMADOS É: %d" , restototal);
             printf("\n");
         break;
 
