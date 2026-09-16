@@ -2,6 +2,7 @@
  * Faca um programa em C - que leia dois numeros inteiros
  * Nao aceite numeros inferiores a zero, em seguida peça para o usuario
  * selecionar uma operacao
+ * O meu deve continuar aparecendo - enquanto o usuario nao escolher o 0
  * 1 - SOMA
  * 2 - SUBTRACAO
  * 3 - DIVISAO
