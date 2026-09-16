@@ -24,7 +24,8 @@
  {
     int n1, n2;
     int opcao;
-    int soma;
+    int soma, subtracao;
+    double divisao, mutiplicacao;
 
     printf("********************************** \n");
     printf("*    CALCULADORA - SWITH CASE    * \n");
@@ -46,7 +47,7 @@
         printf("* Numero 2: ");
         scanf("%d", &n2);
     }
-
+    
     printf("\n");
     printf("* UTILIZE AS OPCOES DO MEU ABAIXO * \n");
         printf("* ( 1 ) - SOMA \n");
@@ -63,7 +64,7 @@
     switch (opcao) {
 
         case 1:
-        soma = n1 + n2 ;
+        soma = n1 + n2;
             system("cls");
             printf("* OPCAO ESCOLHIDA - SOMA * \n");
             printf("* Numero informados pelo usuario: \n");
@@ -74,43 +75,103 @@
         break;
     
         case 2:
+        subtracao = n1 - n2;
             system("cls");
-            printf("SUBTRACAO");
+            printf("* OPCAO ESCOLHIDA - SUBTRACAO * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* A SUBTRACAO DOS NUMEROS INFORMADOS É: %d" , subtracao);
+            printf("\n");
         break;
 
-        case 3:
+        case 3:             //NAO PERMITIR DIVISAO POR ZERO - TESTAR
+
+        if (n2 == 0) {
+            printf("* ERROR : Divisao por zero nao é permitida - tente novamente !\n");
+        }else{
+            divisao = n1 / n2;
             system("cls");
-            printf("DIVISAO");
+            printf("* OPCAO ESCOLHIDA - DIVISAO * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* A DIVISAO DOS NUMEROS INFORMADOS É: %d" , divisao);
+            printf("\n");
+        }
+        
         break;
 
         case 4:
+        mutiplicacao = n1 * n2;
             system("cls");
-            printf("MULTIPLICACAO");
+            printf("* OPCAO ESCOLHIDA - MULTIPLICACAO * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* A MULTIPLICACAO DOS NUMEROS INFORMADOS É: %d" , mutiplicacao);
+            printf("\n");
         break;
 
         case 5:
+        //informe qual porcentagem deseja calcular
+        //porcentagem do numero 1 = (numero1/porcentagem)*100;
+        //porcentagemtotal = numero1-numero1porcentagem;
             system("cls");
-            printf("PORCENTAGEM");
+            printf("* OPCAO ESCOLHIDA - PORCENTAGEM DOS NUMEROS * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* A PORCENTAGEM DOS NUMEROS INFORMADOS É: %d");
+            printf("\n");
         break;
 
         case 6:
+        //potenciacao n1
+        //potenciacao n2
+        //potenciacao total
+        //calcular a potenciacao de cada numero - somar e mostrar na tela
             system("cls");
-            printf("POTENCIACAO \n");
+            printf("* OPCAO ESCOLHIDA - POTENCIACAO DOS NUMEROS * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* Potenciacao do numero 1 %d\n :");
+            printf("* Potenciacao do numero 2 %d\n :");
+            printf("* A POTENCIACAO TOTAL DOS NUMEROS INFORMADOS É: %d");
+            printf("\n");
         break;
 
         case 7:
+        //resto_n1 = n1 % 2
+        //resto_n2 = n2 % 2 
+        //resto_total = (n1 + n2) % 2
             system("cls");
-            printf("RESTO \n");
+            printf("* OPCAO ESCOLHIDA - RESTO * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* Resto do numero 1 %d\n :");
+            printf("* Resto do numero 2 %d\n :");
+            printf("* A SOMA DOS RESTO TOTAL DOS NUMEROS INFORMADOS É: %d");
+            printf("\n");
         break;
 
         case 9:
             system("cls");
             printf(" MAIS INFORMACOES \n");
+            //tipos matematicos
+            //tipos numericos
+            //conversao de base numericas
+            //conversao de medidas
+            //sobre o aplicativo
+            //sair
         break;
 
         case 0:
+        system("cls");
+        printf("* SAIR DO APP \n");
         break;
-
 
         default:
             printf("************************************************ \n");
