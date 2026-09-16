@@ -12,6 +12,7 @@
  * 7 - RESTO
  * 9 - MAIS INFORMACOES
  * 0 - SAIR
+ * Mostre no final as informacoes na tela
  */
 
  #include <stdio.h>
@@ -23,6 +24,7 @@
  {
     int n1, n2;
     int opcao;
+    int soma;
 
     printf("********************************** \n");
     printf("*    CALCULADORA - SWITH CASE    * \n");
@@ -31,6 +33,9 @@
     printf("*  INSIRA DOIS NUMEROS A SEGUIR  * \n");
     printf("* Numero 1: ");
     scanf("%d", &n1);
+
+    printf("* Numero 2: ");
+    scanf("%d", &n2);
 
     /* nao aceita numeros menores do que zero */
     while (n1<0 || n2<0) {
@@ -58,8 +63,14 @@
     switch (opcao) {
 
         case 1:
+        soma = n1 + n2 ;
             system("cls");
-            printf("SOMA");
+            printf("* OPCAO ESCOLHIDA - SOMA * \n");
+            printf("* Numero informados pelo usuario: \n");
+            printf("* Numero 1: %d\n", n1);
+            printf("* Numero 2: %d\n", n2); 
+            printf("* A SOMA DOS NUMEROS INFORMADOS É: %d" , soma);
+            printf("\n");
         break;
     
         case 2:
