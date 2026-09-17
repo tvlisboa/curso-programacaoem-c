@@ -27,6 +27,7 @@
         printf("\n");
 
         /* incrementa se for maior que 10 - decrementa se for menor que 10 */
+        /* numero++ : numero = numero + 1 // numero-- : numero = numero - 1 */
         n1 >= 10 ? n1++ : n1--;
         printf("Novo valor do numero 1:  %d", n1);
         printf("\n");
