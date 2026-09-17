@@ -49,24 +49,17 @@
     /* fazer calculo da media do aluno */
     media = (nota1 + nota2) /2;
 
-    
-    /**
-     * converter nome do usuario para uppercase 
-       for (int i= 0; i < count; i++){
-       }
-     */
-    
-    
-    
-    
-
+     for (int i = 0; nomeAluno[i] != '\0' ; i++) {
+        nomeAluno[i] = toupper(nomeAluno[i]);
+     }
+     
     /* teste de saida de dados */
     printf("********************************** \n");
     printf("Nome do aluno : %s\n", nomeAluno);
     printf("Notas informadas \n");
     printf("Nota 1 : %.2lf\n" , nota1);
     printf("Nota 2 : %.2lf\n" , nota2);
-    printf("* Media final do aluno : %.2lf" , media);
+    printf("* Media final do aluno : %.2lf\n" , media);
     system("pause");
     return 0;
  }
