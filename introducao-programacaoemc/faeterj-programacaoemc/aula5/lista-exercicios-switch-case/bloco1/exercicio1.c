@@ -87,12 +87,13 @@
 
          //NAO PERMITIR DIVISAO POR ZERO - TESTAR
         case 3:
+        divisao = (n1 / n2);
             system("cls");
             printf("* OPCAO ESCOLHIDA - DIVISAO * \n");
             printf("* Numero informados pelo usuario: \n");
-            printf("* Numero 1: %d\n", n1);
-            printf("* Numero 2: %d\n", n2); 
-            printf("* A DIVISAO DOS NUMEROS INFORMADOS É: %d" , divisao);
+            printf("* Numero 1: %lf\n", n1);
+            printf("* Numero 2: %lf\n", n2); 
+            printf("* A DIVISAO DOS NUMEROS INFORMADOS É: %lf" , divisao);
             printf("\n");
         
         break;
