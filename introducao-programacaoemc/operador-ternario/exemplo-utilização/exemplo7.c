@@ -38,18 +38,18 @@
       scanf("%lf", &price);
     }
 
-    
-    
+   /* operador ternario 
+      n1 >= 10 ? n1++ : n1--;
+   */
 
-    /* 
-    *  faca as validacoes utilizando o operador ternario e convercoes para uppercase - utilize o for para varrer o array
-    *  mostre as informacoes na tela
-    */
+   // price>=50 ? printf("* Produto, está com preco normal");
 
+    /* saida das informacoes na tela do usuario*/
     printf("************************************* \n");
     printf("*   DADOS INFORMADOS PELO USUARIO   * \n");
     printf("* Produto informado: %s\n ", name);
     printf("* Preco do produto: %.2lf\n ", price);
+    printf("************************************* \n");
     system("pause");
     return 0;
  }
