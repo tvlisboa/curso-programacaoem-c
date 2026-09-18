@@ -10,3 +10,47 @@
  * Depois mostre na tela as informacoes - nome do produto / preco atribuido e sua classificacao
  * Nao aceite valores inferior a 0
  */
+
+ #include <stdio.h>
+ #include <stdio.h>
+
+ int main(int argc, char const *argv[])
+ {
+
+    char name[100];
+    double price;
+
+    printf("************************************* \n");
+    printf("* SIG - SISTEMA INTEGRADO DE GESTAO * \n");
+    printf("************************************* \n");
+
+    printf("* INSIRA AS INFORMAÇOES DOS PRODUTOS A SEGUIR: \n");
+    printf("* Nome do produto : ");
+    scanf("%s", name);
+
+    printf("* Preco unitario: ");
+    scanf("%lf", &price);
+
+    /* nao aceite valores menores que zero - utilizando o while */
+    while (price<=0) {
+      printf("Dados do produtos estão incorretos - por favor verifique e tente novamente \n");
+      printf("* Preco unitario: ");
+      scanf("%lf", &price);
+    }
+
+    
+    
+
+    /* 
+    *  faca as validacoes utilizando o operador ternario e convercoes para uppercase - utilize o for para varrer o array
+    *  mostre as informacoes na tela
+    */
+
+    printf("************************************* \n");
+    printf("*   DADOS INFORMADOS PELO USUARIO   * \n");
+    printf("* Produto informado: %s\n ", name);
+    printf("* Preco do produto: %.2lf\n ", price);
+    system("pause");
+    return 0;
+ }
+ 
