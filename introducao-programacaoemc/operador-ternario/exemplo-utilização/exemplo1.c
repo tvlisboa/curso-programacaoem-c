@@ -19,15 +19,27 @@
     printf("************************** \n");
     printf("\n");
 
-        printf("* Numero 1 : ");
+        printf("* Digite um numero a seguir: ");
         scanf("%d", &n1);
 
+        /* nao aceita numeros menores que 0 */
+        while (n1<0) {
+            printf("* Numero informado e invalido - tente novamente * \n");
+            printf("* Digite um numero a seguir: ");
+            scanf("%d", &n1);
+        }
+        
         /* teste de saida de dados - antes da validacao */
         printf("Numero informado pelo usuario: %d", n1);
         printf("\n");
 
-        /* incrementa se for maior que 10 - decrementa se for menor que 10 */
-        /* numero++ : numero = numero + 1 // numero-- : numero = numero - 1 */
+        /* 
+         * incrementa se for maior que 10
+         * decrementa se for menor que 10
+         * numero++ : numero = numero + 1
+         * numero-- : numero = numero - 1 
+         */
+
         n1 >= 10 ? n1++ : n1--;
         printf("Novo valor do numero 1:  %d", n1);
         printf("\n");
