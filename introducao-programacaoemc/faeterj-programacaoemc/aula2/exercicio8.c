@@ -30,6 +30,7 @@
     printf("* \nNumero 1: %.2f", n1);
     printf("* \nNumero 2: %.2f", n2);
     printf("* \nResultado do produto dos numeros informados: %.2f", mult);
+    printf("\n");
     system("\npause");
     return 0;
  }
