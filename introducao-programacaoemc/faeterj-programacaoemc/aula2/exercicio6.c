@@ -29,6 +29,8 @@
     
     if(n1 % 2 == 0){                                        //verifica se o numero informado e par ou impar
         printf("Numero informado é par");
+    }else if(n1 % 2 == 1){
+        printf("Numero informado é impar");
     }else{
         printf("Numero informado é impar");
     }
@@ -40,6 +42,7 @@
     printf("\nNumero informado pelo usuario: %d",n1);
     printf("\nDobro do numero informado: %d", dobro);
     printf("\nTriplo do numero informado: %d", triplo);
+    printf("\n");
     system("\npause");
     return 0;
  }
