@@ -14,9 +14,9 @@
     int antecessor;
     int sucessor;
 
-    printf("************************** \n");
-    printf("* ANTECESSOR OU SUCESSOR * \n");
-    printf("************************** \n");
+    printf("************************************************ \n");
+    printf("* EXERCICIO NUMEROS ANTECESSORES OU SUCESSORES * \n");
+    printf("************************************************ \n");
 
     printf("* Informe um numero a seguir *");
     printf("\n *Numero 1: ");
