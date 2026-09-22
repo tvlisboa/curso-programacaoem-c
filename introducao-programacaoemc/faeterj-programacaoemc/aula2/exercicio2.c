@@ -12,37 +12,48 @@
  int main()
  {
 
-    char name[100];
+    char nome[100];
     char materia[100];
     double n1, n2, n3, n4;
     double media;
 
     printf("************************************** \n");
     printf("* Informe os dados do aluno a seguir * \n");
-    printf("* Nome: ");
-    scanf("%s", name);
+    printf("* Nome do aluno: ");
+    scanf("%s", nome);
 
     printf("* Nome da materia: ");
     scanf("%s", materia);
 
-    printf("* Informe as 4 notas do aluno: \n");
-    printf("* Nota 1: ");
-    scanf("%lf", &n1);
+    /* utilizacao do do_while para validacao das notas */
+    do {
+        printf("* Informe as 4 notas do aluno: \n");
 
-    while (n1<0 || n2>10)
-    {
-        
-    }
-    
+        printf("* Nota 1: ");
+        scanf("%lf", &n1);
 
-    printf("* Nota 2: ");
-    scanf("%lf", &n2);
+        printf("* Nota 2: ");
+        scanf("%lf", &n2);
 
-    printf("* Nota 3: ");
-    scanf("%lf", &n3);
+        printf("* Nota 3: ");
+        scanf("%lf", &n3);
 
-    printf("* Nota 4: ");
-    scanf("%lf", &n4);
+        printf("* Nota 4: ");
+        scanf("%lf", &n4);
+
+        if((n1 < 0 || n1 > 10) ||
+           (n2 < 0 || n2 > 10) ||
+           (n3 < 0 || n3 > 10) ||
+           (n4 < 0 || n4 > 10)) {
+
+            printf("Notas informas - sao invalidas. Tente novamente \n");
+
+           }
+
+    } while ((n1 < 0 || n1 > 10) ||
+             (n2 < 0 || n2 > 10) ||
+             (n3 < 0 || n3 > 10) ||
+             (n4 < 0 || n4 > 10));
 
     /* calculo da media */
     media = (n1 + n2 + n3 + n4)/4;
@@ -59,7 +70,7 @@
     printf("\n");
     printf("********************************* \n");
     printf("* Dados informados pelo usuario *\n");
-    printf("* Nome do usuario: %s", name);
+    printf("* Nome do usuario: %s", nome);
     printf("\n* Nome da materia: %s", materia);
     printf("\n* Nota 1: %.2lf\n", n1);
     printf("* Nota 2: %.2lf\n", n2);
