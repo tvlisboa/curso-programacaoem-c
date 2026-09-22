@@ -17,36 +17,33 @@
     printf("******************************* \n");
 
     /* entrada de dados do usuario*/
-    printf("Informe o ano atual a seguir:");
+    printf("* INSIRA OS DADOS DO USUARIO A SEGUIR *\n");
+    printf("* ANO ATUAL: ");
     scanf("%d", &anoAtual);
 
-    printf("Informe o ano de nascimento a seguir:");
+    printf("* ANO DE NASCIMENTO: ");
     scanf("%d", &anoNascimento);
 
     /* nao aceita dados menores que o ano atual */
     while (anoNascimento > anoAtual){
-        printf("Dados informados estao incorretos - tente novamente \n");
+        printf("* DADOS INFORMADOS INCORRETOS - TENTE NOVAMENTE * \n");
+        printf("* INSIRA OS DADOS DO USUARIO A SEGUIR *\n");
 
-        printf("Informe o ano atual a seguir:");
+        printf("* ANO ATUAL: ");
         scanf("%d", &anoAtual);
 
-        printf("Informe o ano de nascimento a seguir:");
+         printf("* ANO DE NASCIMENTO: ");
         scanf("%d", &anoNascimento);
     }
 
     /* calculo da idade */
     int idadeUsuario = anoAtual - anoNascimento;
 
-        /* validacao de idade - idoso - adulto - adolescente e crianca*/
-        if(idadeUsuario>= 60){
-            printf("\nUsuario informado é considerado idoso!");
-        }else if(idadeUsuario>=18){
-            printf("\nUsuario informado é considerado adulto!");
-        }else if(idadeUsuario>=16){
-            printf("\nUsuario informado é considerado adolescente!");
-        }else{
-            printf("\nUsuario informado é considerado criança!");
-        }
+    /* utilizacao do ternario - substituicao do if-else aninhado */
+    printf("%s" , 
+    idadeUsuario >= 60 ? "Usuario informado é Idoso" :
+    idadeUsuario >= 18 ? "Usuario informado é Adulto" :
+    idadeUsuario >= 16 ? "Usuario informado é Adolescente." : "crianca");
 
     /* saida de dados do usuario */
     printf("\n*******************************");
