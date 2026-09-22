@@ -41,9 +41,9 @@
 
     /* utilizacao do ternario - substituicao do if-else aninhado */
     printf("%s" , 
-    idadeUsuario >= 60 ? "Usuario informado é Idoso" :
-    idadeUsuario >= 18 ? "Usuario informado é Adulto" :
-    idadeUsuario >= 16 ? "Usuario informado é Adolescente." : "crianca");
+    idadeUsuario >= 60 ? "Usuario informado é Idoso !" :
+    idadeUsuario >= 18 ? "Usuario informado é Adulto !" :
+    idadeUsuario >= 16 ? "Usuario informado é Adolescente." : "Usuario informado é Crianca !");
 
     /* saida de dados do usuario */
     printf("\n*******************************");
