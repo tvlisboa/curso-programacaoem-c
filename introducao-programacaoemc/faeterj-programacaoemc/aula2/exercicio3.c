@@ -29,8 +29,9 @@
     area = largura * altura;
 
     /* saida de dados */
-    printf("****************************************");
-    printf("\nAltura do terreno em mt: %.2lf", altura);
+    printf("**************************************** \n");
+    printf("*    DADOS INFORMADOS PELO USUARIO     * \n");
+    printf("Altura do terreno em mt: %.2lf", altura);
     printf("\nLargura do terreno em mt: %.2lf", largura);
     printf("\nArea total do terreno em mt: %.2lf", area);
     printf("\n**************************************** \n");
