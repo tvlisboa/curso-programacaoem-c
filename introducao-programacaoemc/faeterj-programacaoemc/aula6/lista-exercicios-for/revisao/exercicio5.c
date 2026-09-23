@@ -9,3 +9,20 @@
  * Sênior: 18 ou mais anos.
  * Escreva um algoritmo completo para apresentar a categoria de um nadador dada sua idade.
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+ int main(int argc, char const *argv[])
+ {
+
+    printf("************************************************* \n");
+    printf("*             COMPETICAO CORPO E AGUA           * \n");
+    printf("* INSIRA AS INFORMACOES DOS COMPETIDORES ABAIXO * \n");
+    printf("************************************************* \n");
+    
+
+    system("pause");
+    return 0;
+ }
+ 
