@@ -5,6 +5,14 @@
  * Faça um algoritmo que calcule e mostre quanto restará do salário do João
  */
 
+ // Informe o seu salario
+ // Informe a quantidade de contas a pagar
+ // Informe os valores das contas - conta1 && conta2
+ // conta1 = conta1+(conta1*2)/100
+ // conta2 = conta2+(conta2*2)/100
+ // totalcontas = conta1 +  conta2 
+ // desconto salario = salario - totalcontas
+
  #include <stdio.h>
  #include <stdlib.h>
 
