@@ -16,12 +16,20 @@
  int main(int argc, char const *argv[])
  {
 
+    int idadeCompetidor;
+
     printf("************************************************* \n");
     printf("*             COMPETICAO CORPO E AGUA           * \n");
     printf("* INSIRA AS INFORMACOES DOS COMPETIDORES ABAIXO * \n");
     printf("************************************************* \n");
+
+    printf("* IDADE DO COMPETIDOR: ");
+    scanf("%d", idadeCompetidor);
     
 
+    /* teste de saida */
+    printf("* Idade do competidor: %d\n" , idadeCompetidor);
+    printf("* Categoria: %s\n");
     system("pause");
     return 0;
  }
