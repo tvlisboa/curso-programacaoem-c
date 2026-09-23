@@ -4,3 +4,14 @@
  * Como as contas estão atrasadas, João terá de pagar multa de 2% sobre cada conta. 
  * Faça um algoritmo que calcule e mostre quanto restará do salário do João
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+
+ int main(int argc, char const *argv[])
+ {
+    
+    return 0;
+ }
+ 
