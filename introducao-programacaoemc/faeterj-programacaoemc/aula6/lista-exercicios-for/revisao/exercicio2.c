@@ -19,7 +19,24 @@
 
  int main(int argc, char const *argv[])
  {
+
+   double salario, novoSalario;
+   double conta1, conta2;
+
+
+   printf("******************************** \n");
+   printf("*     EXERCICIO  -  CONTAS     * \n");
+   printf("******************************** \n");
+
+   printf("* Insira o salario do cliente a seguir. * \n");
+   printf("* Salario: ");
+   scanf("%lf", &salario);
     
-    return 0;
+
+
+   /* teste de saida de dados */
+   printf("Salario do cliente: %.2lf\n", salario);
+   system("pause");
+   return 0;
  }
  
