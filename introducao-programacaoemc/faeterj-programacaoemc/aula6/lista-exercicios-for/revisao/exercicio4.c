@@ -31,8 +31,8 @@
     /* teste de saida de dados */
     printf("Numero 1: %d\n" , n1);
     printf("Numero 2: %d\n" , n2);
-    printf("Potencia do %d\n é igual %.2lf\n" , n1 , potenciaN1);
-    printf("Potencia do %d\n é igual %.2lf\n" , n2 , potenciaN2);
+    printf("Potencia do %d\n é igual %.1lf\n" , n1 , potenciaN1);
+    printf("Potencia do %d\n é igual %.1lf\n" , n2 , potenciaN2);
     system("pause");
     return 0;
  }
