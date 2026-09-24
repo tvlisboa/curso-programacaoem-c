@@ -32,7 +32,8 @@
 
     /* nao aceite o ano de nascimento ser maior que o ano atual */
     while (anoNascimento > anoAtual) {
-        printf("Dados informados estão incorretos - tente novamente \n");
+        printf("* Dados informados estão incorretos *\n");
+        printf("* Informe os dados novamente * \n");
 
         printf("* Ano de nascimento: ");
         scanf("%d", &anoNascimento);
@@ -50,12 +51,13 @@
     
     /* saida de dados */
     printf("******************************** \n");
-    printf("Ano de nascimento: %d\n" , anoNascimento);
-    printf("Ano atual: %d\n" , anoAtual);
-    printf("Idade do usuario: %d\n" , idadeUsuario);
-    printf("Idade do usuario em meses: %d\n" , idadeMeses);
-    printf("Idade do usuario em semanas: %d\n" , idadesSemanas);
-    printf("Idade do usuario em dias: %d\n" , idadeDias);
+    printf("*    INFORMACOES DO USUARIO    * \n");
+    printf("* Ano de nascimento: %d\n" , anoNascimento);
+    printf("* Ano atual: %d\n" , anoAtual);
+    printf("* Idade do usuario: %d\n" , idadeUsuario);
+    printf("* Idade do usuario em dias: %d\n" , idadeDias);
+    printf("* Idade do usuario em semanas: %d\n" , idadesSemanas);
+    printf("* Idade do usuario em meses: %d\n" , idadeMeses);
     printf("******************************** \n");
     system("pause");
     return 0;
