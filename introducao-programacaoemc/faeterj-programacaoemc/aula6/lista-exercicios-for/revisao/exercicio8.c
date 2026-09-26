@@ -3,5 +3,8 @@
  * Ate qual numero deseja contar
  * Qual e seu incremento
  * A soma dos numeros informados
- * Quantos numeros sao positivos e quantos numeros sao negativos
+ * A media dos numeros informados
+ * Quantos numeros sao positivos
+ * Quantos numeros sao negativos
+ * Quantos numeros sao neutros
  */
