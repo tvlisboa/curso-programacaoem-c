@@ -16,6 +16,7 @@
     int totPositivo, totNegativo , totNeutro;
     int positivo, negativo, neutro;
     int soma = 0;
+    double media= 0;
 
     printf("******************************** \n");
     printf("*          EXERCICIO 5         * \n");
@@ -40,7 +41,10 @@
         soma = soma + n1;
     }
 
+    media = (double)soma/10;
+
     printf("A soma dos numeros informados foi: %d\n" , soma);
+    printf("A media dos numeros informados foi: %.2lf\n" , media);
     printf("A quantidade de numeros positivos foi: %d\n", totPositivo);
     printf("A quantidade de numeros negativos foi: %d\n", totNegativo);
     printf("A quantidade de numeros neutros foi: %d\n", totNeutro);
