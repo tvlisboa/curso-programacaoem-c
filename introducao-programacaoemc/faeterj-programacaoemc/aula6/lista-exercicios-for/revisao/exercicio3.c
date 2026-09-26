@@ -1,5 +1,7 @@
 /*
- * Faça um programa em C que leia um numero e informe se ele é par ou impar.  
+ * Faça um programa em C que leia um numero e informe se o numero informado é
+ * Numero par
+ * Numero impar
  */
 
  #include <stdio.h>
@@ -22,6 +24,8 @@
         printf("Numero informado %d é impar. \n" , n1);
     }
 
+    printf("*     FIM DO ALGORITMO     * \n");
+    printf("**************************** \n");
     system("pause");
     return 0;
  }
