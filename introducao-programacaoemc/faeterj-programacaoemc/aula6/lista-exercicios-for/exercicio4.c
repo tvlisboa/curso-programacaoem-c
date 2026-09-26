@@ -12,13 +12,15 @@ int main() {
     printf("************************* \n");
     printf("*      EXERCICIO 4      * \n");
     printf("*   INICIO DA CONTAGEM  * \n");
-    printf("* Insira um numero a seguir: ");
+    printf("* Deseja contar ate quanto: ");
     scanf("%d", &n1);
 
-
-
+    for (int i = 1 ; i <= n1; i++) {
+        printf("%d\n" , i); 
+    }
+    
     /* teste de saida de dados */
-    printf("Numero informado pelo usuario: %d\n" , n1);
+    printf("*      FIM DA CONTAGEM      * \n");
     system("pause");
     return 0;
  }
