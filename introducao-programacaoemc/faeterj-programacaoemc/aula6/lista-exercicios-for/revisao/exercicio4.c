@@ -1,5 +1,8 @@
 /**
- * Faça um programa em C que leia dois números inteiros e informe a potencia entre eles n1 elevado n1 e n2 elevado a n2
+ * Faça um programa em C que leia 
+ * dois números inteiros e informe a potencia entre eles 
+ * n1 elevado n1 e 
+ * n2 elevado a n2
  */
 
  #include <stdio.h>
@@ -17,14 +20,14 @@
     printf("* EXERCICIO POTENCIACAO * \n");
     printf("************************* \n");
 
-    printf(" * INFORME DOIS NUMEROS A SEGUIR * \n");
+    printf(" * INFORME DOIS NUMEROS INTEIROS A SEGUIR * \n");
     printf("* Numero 1: ");
     scanf("%d", &n1);
 
     printf("* Numero 2: ");
     scanf("%d", &n2);
 
-    /* potenciacao dos numeros */
+    /* potenciacao dos numeros - utilizando a biblioteca matematica */
     potenciaN1 = pow(n1, n1);
     potenciaN2 = pow(n2, n2);
 
