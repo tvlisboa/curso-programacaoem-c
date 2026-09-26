@@ -17,8 +17,8 @@
     printf("*      INICIO DA CONTAGEM     * \n");
     printf("* Informe 10 numeros a seguir * \n");
 
-    for (int i = 1; i <=3; i++) {
-        printf("Informe um numero a ");
+    for (int i = 1; i <=10; i++) {
+        printf("Informe um numero a seguir: ");
         scanf("%d", &numero1);
 
         soma = soma +  numero1;
