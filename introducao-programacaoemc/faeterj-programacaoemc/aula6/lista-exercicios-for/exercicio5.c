@@ -11,7 +11,7 @@
  {
 
     int numero1;
-    int soma;
+    int soma = 0;
     double media;
     
     printf("************************* \n");
@@ -27,7 +27,9 @@
     }
 
     media = (double)soma / 5;
-    printf("A media dos numeros informados foi: %.2lf\n" , media);
+    printf("A media dos numeros informados foi: %.1lf\n" , media);
+    printf("A soma dos numeros informados foi: %d\n" , soma);
+    printf("*      FIM DA CONTAGEM      * \n");
     system("pause");
     return 0;
  }
