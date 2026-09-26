@@ -12,7 +12,7 @@
 
     int numero1;
     int soma = 0;
-    double media;
+    double media = 0;
     
     printf("************************* \n");
     printf("*      EXERCICIO 5      * \n");
