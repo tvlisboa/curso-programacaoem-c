@@ -11,15 +11,34 @@
  int main(int argc, char const *argv[])
  {
 
-    int n1 = 0;
+    int final = 0;
     int inicio = 0;
     int incremento = 0;
+    int i;
 
     printf("************************* \n");
     printf("*      EXERCICIO 11     * \n");
     printf("*   INICIO DA CONTAGEM  * \n");
 
+    printf("Ate quanto vamos contar? ");
+    scanf("%d", &final);
 
+    printf("Iniciamos em quanto ? ");
+    scanf("%d", &inicio);
+
+    printf("E qual o valor do incremento ? ");
+    scanf("%d", &incremento);
+    printf("************************* \n");
+    printf("\n");
+
+    for (i = inicio; i <=final; i+=incremento) {
+        printf("%d\n" , i);
+    }
+    
+    /* teste de saida de dados */
+    printf("Final da contagem: %d\n" , final);
+    printf("Inicio da contagem: %d\n" , inicio);
+    printf("Valor do incremento: %d\n" , incremento);
     printf("*   FIM DA CONTAGEM  * \n");
     system("pause");
     return 0;
