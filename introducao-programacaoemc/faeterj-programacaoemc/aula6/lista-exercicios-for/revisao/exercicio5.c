@@ -18,34 +18,46 @@
  {
 
     int idadeCompetidor;
+    int opcao;
     char mensagem[50];
 
-    printf("************************************************* \n");
-    printf("*             COMPETICAO CORPO E AGUA           * \n");
-    printf("* INSIRA AS INFORMACOES DOS COMPETIDORES ABAIXO * \n");
-    printf("************************************************* \n");
+    printf("****************************************************** \n");
+    printf("*                COMPETICAO CORPO E AGUA             * \n");
+    printf("*   INSIRA AS INFORMACOES DOS COMPETIDORES ABAIXO    * \n");
+    printf("****************************************************** \n");
 
-    printf("* IDADE DO COMPETIDOR: ");
-    scanf("%d", idadeCompetidor);
+    do {
+        printf("* Informe a idade: ");
+        scanf("%d", &idadeCompetidor);
 
-    if(idadeCompetidor >=18){
-        strcpy(mensagem , "Sênior. \n");
-    }else if (idadeCompetidor >=14) {
-        strcpy(mensagem , "Juvenil B. \n");
-    }else if(idadeCompetidor >= 11){
-        strcpy(mensagem , "Juvenil A. \n");
-    }else if(idadeCompetidor >=7){
-        strcpy(mensagem , "Infantil C. \n");
-    }else if(idadeCompetidor >=5){
-        strcpy(mensagem , "Infantil B. \n");
-    }else{
-        strcpy(mensagem , "Infantil A. \n");
-    }
+        if(idadeCompetidor >=18){
+        strcpy(mensagem , "Categoria selecionada: Sênior. \n");
+        }
+            else if (idadeCompetidor >=14) {
+            strcpy(mensagem , "Categoria selecionada: Juvenil B. \n");
+        }
+            else if(idadeCompetidor >= 11){
+            strcpy(mensagem , "Categoria selecionada: Juvenil A. \n");
+        }
+            else if(idadeCompetidor >=7){
+            strcpy(mensagem , "Categoria selecionada: Infantil C. \n");
+        }
+            else if(idadeCompetidor >=5){
+            strcpy(mensagem , "Categoria selecionada: Infantil B. \n");
+        }
+            else{
+            strcpy(mensagem , "Categoria selecionada: Infantil A. \n");
+        }
+
+        printf("* Idade do competidor: %d\n" , idadeCompetidor);
+        printf("* Categoria selecionada: %s\n", mensagem);
+
+        printf("* PARA SAIR - APERTE 0 * \n");
+        scanf("%d", &opcao);
+
+    } while (opcao!=0);
     
-    
-    /* teste de saida */
-    printf("* Idade do competidor: %d\n" , idadeCompetidor);
-    printf("* Categoria: %s\n");
+    printf("* FIM DO ALGORITMO * \n");
     system("pause");
     return 0;
  }
