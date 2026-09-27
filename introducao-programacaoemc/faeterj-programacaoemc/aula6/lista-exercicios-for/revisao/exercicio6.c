@@ -19,7 +19,7 @@
 
     char nomeAluno[100];
     char materia[50];
-    char mensagem[30];
+    char mensagem[50];
     double n1, n2, n3;
     double media;
 
@@ -59,8 +59,7 @@
              (n2 < 0 || n2 > 10) ||
              (n3 < 0 || n3 > 10));
 
-    /* calculo da media */
-    media = (n1 + n2 + n3)/ 3;
+    media = (n1 + n2 + n3)/ 3;                                                      //calculo da media
 
     if (media>=7.0) {
         strcpy(mensagem , "Aluno informado esta aprovado \n"); 

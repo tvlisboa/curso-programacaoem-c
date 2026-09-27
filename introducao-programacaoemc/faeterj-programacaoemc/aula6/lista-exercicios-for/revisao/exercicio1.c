@@ -12,7 +12,7 @@
  int main(int argc, char const *argv[])
  {
 
-    int anoNascimento;
+    int anoNascimento;                  //ano nascimento do usuario
     int anoAtual;                       // idade em anos
     int idadeUsuario;                   // ano atual - ano nascimento
     int idadeMeses;                     // idadeMeses = idadeUsuario * 12
@@ -54,7 +54,7 @@
     printf("*    INFORMACOES DO USUARIO    * \n");
     printf("* Ano de nascimento: %d\n" , anoNascimento);
     printf("* Ano atual: %d\n" , anoAtual);
-    printf("* Idade do usuario: %d\n" , idadeUsuario);
+    printf("* Idade do usuario em anos: %d\n" , idadeUsuario);
     printf("* Idade do usuario em dias: %d\n" , idadeDias);
     printf("* Idade do usuario em semanas: %d\n" , idadesSemanas);
     printf("* Idade do usuario em meses: %d\n" , idadeMeses);

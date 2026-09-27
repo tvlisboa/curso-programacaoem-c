@@ -1,8 +1,9 @@
 /**
  * Faça um programa em C que leia 
- * dois números inteiros e informe a potencia entre eles 
+ * Dois números inteiros e informe a potencia entre eles 
  * n1 elevado n1 e 
  * n2 elevado a n2
+ * Valor total das potencias somadas
  */
 
  #include <stdio.h>
@@ -15,6 +16,7 @@
 
     int n1 , n2;
     double potenciaN1 , potenciaN2;
+    double valorTotal;
 
     printf("************************* \n");
     printf("* EXERCICIO POTENCIACAO * \n");
@@ -30,12 +32,14 @@
     /* potenciacao dos numeros - utilizando a biblioteca matematica */
     potenciaN1 = pow(n1, n1);
     potenciaN2 = pow(n2, n2);
+    valorTotal = potenciaN1 + potenciaN2;
 
     /* teste de saida de dados */
     printf("Numero 1: %d\n" , n1);
     printf("Numero 2: %d\n" , n2);
-    printf("Potencia do %d\n é igual %.1lf\n" , n1 , potenciaN1);
-    printf("Potencia do %d\n é igual %.1lf\n" , n2 , potenciaN2);
+    printf("Potencia do %d\n é igual %.2lf\n" , n1 , potenciaN1);
+    printf("Potencia do %.d\n é igual %.2lf\n" , n2 , potenciaN2);
+    printf("Valor total das potencias: %.2lf\n" , valorTotal);
     system("pause");
     return 0;
  }
