@@ -48,16 +48,14 @@
         printf("* Nota 3: ");
         scanf("%lf", &n3);
 
-        /* verifica se as notas estao invalidas - caso estejam informa o erro */
-        if ((n1 < 0 || n1 > 10)  || 
+        if ((n1 < 0 || n1 > 10)  ||                                                 //verifica se as notas estao invalidas - caso estejam informa o erro
              (n2 < 0 || n2 > 10) ||
              (n3 < 0 || n3 > 10))
         {
             printf("* Dados informados - estão incorretos, tente novamente! \n");
         }
         
-        /* nao aceita nenhuma nota fora do intervalo 0 ate 10 */
-    } while ((n1 < 0 || n1 > 10) || 
+    } while ((n1 < 0 || n1 > 10) ||                                                 //nao aceita nenhuma nota fora do intervalo 0 ate 10
              (n2 < 0 || n2 > 10) ||
              (n3 < 0 || n3 > 10));
 
