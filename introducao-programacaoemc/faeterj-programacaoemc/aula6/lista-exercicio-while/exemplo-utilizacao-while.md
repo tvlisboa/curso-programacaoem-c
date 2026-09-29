@@ -16,3 +16,6 @@ A estrutura while é composta da seguinte sintaxe e maneira de uso, onde o __whi
         Verifica novamente, enquanto a validacao for verdadeira, executa o looping
         Quando for falsa, sai do looping.
 
+### Lista - exercicios estruturas de repeticao
+https://chatgpt.com/g/g-p-6a3b15eee2548191b3a4d10a091295dd-faetec-2026-2/c/6abbb181-cd60-83e9-b59e-0d93a58624b3
+
