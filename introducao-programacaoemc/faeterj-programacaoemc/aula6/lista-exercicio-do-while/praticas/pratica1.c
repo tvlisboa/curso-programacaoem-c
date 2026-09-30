@@ -22,7 +22,7 @@ int main(){
         printf("Deseja continuar a operacao ? [S/N]");
         scanf("%s" , resposta);
 
-    } while ("%s\n " , resposta="N");
+    } while ("%s\n " , resposta);
 
     printf("A soma dos numeros informados foi: %d\n" , soma);
     system("pause");
