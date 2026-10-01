@@ -33,7 +33,7 @@
     printf("************************ \n");
     printf("* Nome do usuario: %s\n" , nome);
     printf("* Ano de nascimento: %d\n" , anoNascimento);
-    printf("* Ano atual: %d\n*" , anoAtual);
+    printf("* Ano atual: %d\n" , anoAtual);
     printf("* Idade atual: %d\n" , idade);
     printf("* Idade futura: %d\n" , idadeFutura);
     system("pause");
