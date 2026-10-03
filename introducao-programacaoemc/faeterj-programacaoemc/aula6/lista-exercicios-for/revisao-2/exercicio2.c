@@ -1,7 +1,9 @@
 /**
  * Exercicio 2 - Escreva um programa em c para ler o 
  * Número total de eleitores de um município, 
- * Número de votos brancos, nulos e válidos. 
+ * Números de votos brancos
+ * Numeros de votos nulos
+ * Numeros de votos válidos. 
  * Calcular e escrever o percentual que cada um representa em relação ao total de eleitores. (2,0)
  */
 
@@ -38,6 +40,7 @@
 
     /* teste de saida de dados*/
     printf("********************************** \n");
+    printf("*  DADOS INFORMADOS PELO ELEITOR * \n");
     printf("Total de eleitores: %d\n" , totEleitores);
     printf("Total de votos brancos: %d\n" , votosBrancos);
     printf("Porcentagem de votos brancos: %.1lf\n" , porcentBrancos);

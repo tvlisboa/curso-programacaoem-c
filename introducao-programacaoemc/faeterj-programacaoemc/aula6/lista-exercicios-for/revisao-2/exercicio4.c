@@ -38,7 +38,6 @@
             scanf("%d" , &idadeNadador);
         }
         
-
     if(idadeNadador>=18){
         printf("Olá %s, sua categoria atual: ADULTO. \n" , nomeNadador);
         printf("Idade informada: %d\n" , idadeNadador);

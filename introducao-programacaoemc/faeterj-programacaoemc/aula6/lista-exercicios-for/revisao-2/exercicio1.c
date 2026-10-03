@@ -1,6 +1,8 @@
 /**
- * Exercicio 1 - Escreva um programa em C que leia o nome de uma pessoa, 
- * sua idade e escreva o nome da pessoa e a idade que ela terá daqui 5 anos. (2,0)
+ * Exercicio 1 - Escreva um programa em C que leia: 
+ * Nome de uma pessoa, 
+ * Sua idade e escreva:
+ * Nome da pessoa e a idade que ela terá daqui 5 anos. (2,0)
  */
 
  #include <stdio.h>
@@ -24,7 +26,7 @@
     printf("* Ano atual: ");
     scanf("%d" , &anoAtual);
 
-    /* calculo da idade e da futura */
+    /* calculo da idade e idade futura */
     idade = anoAtual - anoNascimento;
     idadeFutura = idade + 5;
 
