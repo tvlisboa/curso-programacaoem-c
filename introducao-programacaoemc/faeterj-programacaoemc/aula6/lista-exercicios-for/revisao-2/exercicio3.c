@@ -1,6 +1,7 @@
 /**
  * Exercicio 3
- * Um banco concederá um crédito especial aos seus clientes, dependendo do saldo médio no último ano. 
+ * Um banco concederá um crédito especial aos seus clientes,
+ * Dependendo do saldo médio no último ano. 
  * Faça um programa em C que leia:
  * Saldo médio de um cliente 
  * E calcule o valor do crédito de acordo com a tabela abaixo. 
@@ -17,7 +18,9 @@
 
  int main(){
 
-    double saldo;
+    double saldo; 
+    double novoSaldo;
+    double percentual;
     char nome[100]; 
 
     printf("******************************** \n");
@@ -28,65 +31,38 @@
     printf("Nome: ");
     scanf("%s", nome);
 
-    printf("INSIRA O SALDO DO CLIENTE: ");
+    printf("Saldo do cliente: ");
     scanf("%lf" , &saldo);
 
         if(saldo>10000){
 
-            printf("******************************** \n");
-            printf("* SALDO ACIMA DE 10000* \n");
-            printf("* Saldo informado: %.2lf\n" , saldo);
-            printf("******************************** \n");
-
-            /*  Calcular o valor do credito
-                Mostrar mensagem inforamndo saldo anterior
-                E o valor liberado para emprestimo
-                80% de valor liberado baseado no saldo
-            */
+            percentual = 0.80;
 
         }else if(saldo>5000){
 
-            printf("******************************** \n");
-            printf("* SALDO ACIMA DE 5000* \n");
-            printf("* Saldo informado: %.2lf\n" , saldo);
-            printf("******************************** \n");
-            
-            /*  Calcular o valor do credito
-                Mostrar mensagem inforamndo saldo anterior
-                E o valor liberado para emprestimo
-                60% de valor liberado baseado no saldo
-            */
+            percentual = 0.60;
+
         }else if(saldo>1000){
 
-            printf("******************************** \n");
-            printf("* SALDO ACIMA DE 1000* \n");
-            printf("* Saldo informado: %.2lf\n" , saldo);
-            printf("******************************** \n");
+            percentual = 0.40;
 
-            /*  Calcular o valor do credito
-                Mostrar mensagem inforamndo saldo anterior
-                E o valor liberado para emprestimo
-                40% de valor liberado baseado no saldo
-            */
         }else{
 
-            printf("******************************** \n");
-            printf("* SALDO ABAIXO DE 1000* \n");
-            printf("* Saldo informado: %.2lf\n" , saldo);
-            printf("******************************** \n");
+            percentual = 0.20;
 
-            /*  Calcular o valor do credito
-                Mostrar mensagem inforamndo saldo anterior
-                E o valor liberado para emprestimo
-                20% de valor liberado baseado no saldo
-            */
         }
 
+        novoSaldo = saldo * percentual;
 
     /* teste de saida de dados */
+    printf("\n");
+    printf("****************************** \n");
+    printf("*   INFORMACOES DO CREDITO   * \n");
     printf("****************************** \n");
     printf("* Nome do usuario: %s\n" , nome);
-    printf("* Saldo informado: %.2lf\n" , saldo);
+    printf("* Saldo informado R$: %.2lf\n" , saldo);
+    printf("* Percentual de credito: %.0lf%%\n" , percentual * 100);
+    printf("* Credito aprovado R$: %.2lf\n", novoSaldo);
     printf("****************************** \n");
     system("pause");
     return 0;
