@@ -15,3 +15,61 @@
  * Idade futura:
  * Classificacao atual:
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+ int main(){
+
+    char nome[100];
+    int idade;
+
+    printf("**************************** \n");
+    printf("* EXERCICIO - IDADE FUTURA * \n");
+    printf("**************************** \n");
+
+    printf("* INSIRA AS INFORMACOES DO USUARIO A SEGUIR * \n");
+    printf("* Nome do usuario: ");
+    scanf("%s" , nome);
+
+    printf("* Idade do usuario: ");
+    scanf("%d" , &idade);
+
+    int idadeFutura = idade + 10;
+
+    /* classificacao atual do usuario */
+
+    if(idade>=60){
+
+        printf("************************** \n");
+        printf("Idade atual: %d\n" , idade);
+        printf("Idade futura: %d\n" , idadeFutura);
+        printf("Usuario informado é IDOSO! \n");
+        printf("************************** \n");
+
+    }else if(idade>=18){
+
+        printf("************************** \n");
+        printf("Idade atual: %d\n" , idade);
+        printf("Idade futura: %d\n" , idadeFutura);
+        printf("Usuario informado é ADULTO! \n");
+        printf("************************** \n");
+    }else if(idade>=12){
+
+        printf("************************** \n");
+        printf("Idade atual: %d\n" , idade);
+        printf("Idade futura: %d\n" , idadeFutura);
+        printf("Usuario informado é ADOLESCENTE! \n");
+        printf("************************** \n");
+    }else{
+
+        printf("************************** \n");
+        printf("Idade atual: %d\n" , idade);
+        printf("Idade futura: %d\n" , idadeFutura);
+        printf("Usuario informado é CRIANCA! \n");
+        printf("************************** \n");
+    }
+
+    system("pause");
+    return 0;
+ }
