@@ -9,3 +9,16 @@
  * Solicite apos a selecao do menu - dois numeros ao usuario
  * Faca as operacoes e mostre na tela
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+ int main (){
+    
+
+
+
+
+    system("pause");
+    return 0;
+ }
