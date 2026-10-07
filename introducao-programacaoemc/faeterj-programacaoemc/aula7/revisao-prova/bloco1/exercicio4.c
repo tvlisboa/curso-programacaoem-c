@@ -25,6 +25,16 @@
     printf("Numero 3: ");
     scanf("%d" , &num3);
 
+    if((num1 > num2) && (num1 > num3)) {
+        printf("Numero %d é maior! " , num1);
+    }else if((num2 > num1) && (num2 > num3)) {
+        printf("Numero %d é maior! " , num2);
+    }else if ((num3 > num1) && (num3 > num2)) {
+        printf("Numero %d é maior! " , num3);
+    }else{
+        printf("São iguais \n");
+    }
+
     /* saida de dados */
     printf("******************************* \n");
     printf("*      NUMEROS INFORMADOS     * \n");
