@@ -9,6 +9,7 @@
  void teste(void);
  void nomeUsuario(void);
  void idadeUsuario(void);
+ void nacionalidade(void);
  void estadoCivil(void);
  void mensagem(void);
 
@@ -21,10 +22,11 @@
     /* funcao 1 - 2 - 3 - 4 - 5*/
     teste();
     nomeUsuario();
-    idadeUsuario();
     estadoCivil();
+    nacionalidade();
     mensagem();
     system("pause");
+    system("cls");
     return 0;
  }
 
@@ -37,12 +39,12 @@
     printf("Roberto Silveira \n");
  }
 
- void idadeUsuario(void){
-    printf(32 , "\n");
+ void estadoCivil(void){
+    printf("Solteiro ou casado ? \n");
  }
 
- void estadoCivil(void){
-    printf("Solteiro ou casado ?");
+ void nacionalidade(void){
+   printf("Usuario informado é Brasileiro. \n");
  }
 
  void mensagem(void){
