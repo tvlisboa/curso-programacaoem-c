@@ -4,6 +4,7 @@
 
  #include <stdio.h>
  #include <stdlib.h>
+ #include <locale.h>
 
  /* campo de declaracao de fnc */
  void teste(void);
@@ -13,8 +14,8 @@
  void estadoCivil(void);
  void mensagem(void);
 
- int main(int argc, char const *argv[])
- {
+ int main(int argc, char const *argv[]) {
+   setlocale(LC_ALL, "Portuguese");
 
     printf("******************************** \n");
     printf("*  Exemplos de funcoes abaixo  * \n");
@@ -50,4 +51,3 @@
  void mensagem(void){
     printf("Obrigado por estudar C !! \n");
 }
- 

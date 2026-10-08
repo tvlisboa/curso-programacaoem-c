@@ -36,6 +36,5 @@
 
   void consultarSaldo(void){
     printf("Saldo disponivel - 1250,00 \n");
-    system("cls");
   }
  
