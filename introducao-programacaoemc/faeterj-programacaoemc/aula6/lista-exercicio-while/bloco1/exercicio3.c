@@ -9,7 +9,7 @@
 
  int main(){
 
-    int contador = 0;
+    int contador = 1;
 
     printf("****************************** \n");
     printf("*  EXERCICIO - NUMEROS PARES * \n");
@@ -17,19 +17,13 @@
 
     while (contador<=20) {
 
-        printf("%d", contador);
-
-        if(contador % 2 == 1){
-
+        if(contador % 2 == 0){
+            printf("Numeros pares: %d\n" , contador);
         }
 
         contador = contador + 1;
     }
     
-
-
-
-
     system("pause");
     return 0;
  }

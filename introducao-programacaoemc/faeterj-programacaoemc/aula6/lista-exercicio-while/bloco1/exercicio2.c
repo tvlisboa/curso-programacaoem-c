@@ -17,9 +17,10 @@
     printf("********************** \n");
 
     while(contador>=1){
-        printf("%d\n" , contador);
 
+        printf("%d\n" , contador);
         contador = contador - 1;
+        
     }
 
     system("pause");

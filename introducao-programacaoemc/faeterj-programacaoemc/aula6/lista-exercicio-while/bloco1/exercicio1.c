@@ -16,11 +16,11 @@
     printf("* EXERCICIO CONTADOR * \n");
     printf("********************** \n");
 
-    while (contador<=10)
-    {
-        printf("%d\n" , contador);
+    while (contador<=10) {
 
+        printf("%d\n" , contador);
         contador = contador + 1 ;
+        
     }
 
     system("pause");
