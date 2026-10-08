@@ -42,7 +42,6 @@
         printf("* Numero 2: ");
         scanf("%lf" , &n2);
     }
-    
 
     resultado = somar(n1 , n2);
 
