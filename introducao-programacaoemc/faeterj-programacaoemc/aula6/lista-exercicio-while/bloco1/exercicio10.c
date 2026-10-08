@@ -30,6 +30,7 @@
     scanf("%d" , &quantidade);
 
     while (contador<=quantidade) {
+
         printf("Digite a seguir: ");
         scanf("%d" , &n1);
 
@@ -46,7 +47,7 @@
     printf("Quantidade de numeros informados: %d\n" , quantidade);
     printf("Maior numero informado: %d\n" , numeroMaior);
     printf("Soma: %d\n" , soma);
-    printf("Media total: %d\n" , media);
+    printf("Media total: %.2lf\n" , media);
     printf("*********************** \n");
     system("pause");
     system("cls");
