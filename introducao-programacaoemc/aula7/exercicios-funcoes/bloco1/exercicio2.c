@@ -7,9 +7,9 @@
 
  int ehPar(int numero1){
     if(numero1 % 2 == 0){
-        printf("Numero informado: %d\n , e par!" , numero1);
+        return 1;
     }else{
-        printf("Numero informado: %d\n , e impar!" , numero1);
+        return 0;
     }
  }
 
@@ -19,7 +19,6 @@
  int main(int argc, char const *argv[]) {
 
     int numero1;
-    int resultado;
 
     printf("************************** \n");
     printf("* EXERCICIO - NUMERO PAR * \n");
@@ -31,12 +30,14 @@
 
         printf("* Informe um numero: ");
         scanf("%d" , &numero1); 
-
     }
 
-    resultado = ehPar(numero1);
+    if(ehPar(numero1)){
+        printf("Numero informado %d e par ! \n" , numero1);
+    }else{
+        printf("Numero informado %d e impar ! \n" , numero1);
+    }
 
-    printf(resultado);
     system("pause");
     system("cls");
     return 0;
