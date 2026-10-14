@@ -44,7 +44,7 @@
     printf(" [ 1 ] - SOMAR \n");
     printf(" [ 2 ] - SUBTRAIR \n");
     printf(" [ 3 ] - MULTIPLICAR \n");
-    printf(" [ 4 ] - DIVIDIR \n");                              //nao permitir a divisao por zero
+    printf(" [ 4 ] - DIVIDIR \n");                              //nao permitir a divisao por zero e implementar as demais funcoes matematicas com suas funcoes
     printf(" [ 9 ] - MAIS OPCOES \n");
     printf(" [ 0 ] - SAIR \n");
     scanf("%d" , &opcao);
