@@ -33,11 +33,6 @@
         printf("%d\n" , num1);
         num1+=2;
     }
-    
-    
-
-
-
 
     system("pause");
     return 0;
