@@ -19,6 +19,7 @@
 
         printf("%d\n", i);              //imprimi na tela 1 a 1 ate chegar a 100
         soma = soma + i;                //inicializa com valor = e vai incrementando o valor ate chegar a soma total
+        
     }
 
     printf("Soma dos numeros informados: %d\n" , soma);
