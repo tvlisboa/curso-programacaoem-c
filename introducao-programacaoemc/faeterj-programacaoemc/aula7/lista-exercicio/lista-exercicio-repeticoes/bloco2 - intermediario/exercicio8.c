@@ -2,7 +2,8 @@
  * Exercicio 8 - Numeros positivos e negativos
  * Faça um programa que leia 15 números inteiros. 
  * Ao final, informe quantos números são positivos, 
- * quantos são negativos e quantos são iguais a zero.
+ * quantos são negativos 
+ * e quantos são iguais a zero.
  */
 
  #include <stdio.h>
@@ -14,6 +15,7 @@
     int totPositivo = 0;
     int totNegativo = 0;
     int totNeutro = 0;
+    int totalNumeros = 0;
 
     printf("************************************* \n");
     printf("* EXERCICIO 8 - POSITIVO E NEGATIVO * \n");
@@ -45,10 +47,13 @@
 
     }
 
+    totalNumeros =(totPositivo + totNegativo + totNeutro);
+
     printf("************************************* \n");
     printf("Total de numeros positivos: %d\n" , totPositivo);
     printf("Total de numeros negativos: %d\n" , totNegativo);
     printf("Total de numeros neutros: %d\n" , totNeutro);
+    printf("Total de numeros informados: %d\n" , totalNumeros);
     printf("************************************* \n");
     system("pause");
     return 0;

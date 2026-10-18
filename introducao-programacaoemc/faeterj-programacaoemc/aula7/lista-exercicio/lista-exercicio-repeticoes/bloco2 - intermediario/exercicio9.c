@@ -14,9 +14,8 @@
 
     printf("************************************* \n");
     printf("*     EXERCICIO 9 - MAIOR NUMERO    * \n");
-    printf("************************************* \n");
-
     printf("*    INFORME 10 NUMEROS A SEGUIR    * \n");
+    printf("************************************* \n");
 
     for(int i = 1; i <= 10 ; i++){
 
@@ -32,6 +31,7 @@
 
     printf("************************************* \n");
     printf("*Maior numero informado: %d\n" , numeroMaior);
+    printf("*************************************** \n");
     system("pause");
     return 0;
  }

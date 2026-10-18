@@ -11,9 +11,9 @@
 
  int main (){
 
+    double notas;
     double media;
     double soma = 0;
-    double notas;
 
     printf("*********************** \n");
     printf("* EXERCICIO 6 - MEDIA * \n");
@@ -32,9 +32,35 @@
 
          media = soma / 10;
 
-    printf("*********************** \n");
-    printf("Media final da turma: %lf\n" , media);
-    printf("*********************** \n");
+         /* aproveitamento da turma
+          * Acima de 7 = aproveitamento bom
+          * Acima de 5 = aproveitamento regular
+          * Abaixo de 5 = aproveitamento ruim
+         */
+
+         if(media >=7 ){
+
+            printf("*********************** \n");
+            printf("Media final da turma: %lf\n" , media);
+            printf("Aproveitamento da turma foi bom - Parabéns \n");
+            printf("*********************** \n");
+
+         }else if(media >=5){
+            
+            printf("*********************** \n");
+            printf("Media final da turma: %lf\n" , media);
+            printf("Aproveitamento da turma foi regular - Precisa ser melhorado \n");
+            printf("*********************** \n");
+
+         }else{
+
+            printf("*********************** \n");
+            printf("Media final da turma: %lf\n" , media);
+            printf("Aproveitamento da turma foi ruim - Precisa ser revisto conteudo \n");
+            printf("*********************** \n");
+
+         }
+
     system("pause");
     return 0;
 
