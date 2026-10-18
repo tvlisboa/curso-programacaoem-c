@@ -19,10 +19,11 @@
     for ( int i = 1 ; i <=50 ; i++) {
         
         if( i % 2 == 0){
-            printf("Numero é par %d\n" , i);
 
+            printf("Numero é par %d\n" , i);
             totPar = totPar + 1;
             soma = soma + i;
+            
         }
 
     }

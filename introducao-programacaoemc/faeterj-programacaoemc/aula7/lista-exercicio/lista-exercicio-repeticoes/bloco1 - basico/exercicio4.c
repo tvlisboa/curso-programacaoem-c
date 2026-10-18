@@ -16,17 +16,18 @@
  int main(){
 
     int numero1;
+    int resultado = 0;
 
     printf("************************* \n");
     printf("* EXERCICIO 4 - TABUADA * \n");
     printf("************************* \n");
-
     printf("Informe numero a seguir - para calcular a sua tabuada \n");
     scanf("%d" , &numero1);
 
         for (int i = 1; i <= 10; i++) {
             
-            printf("%d x %d = %d\n" , numero1 , i , numero1 * i);
+            resultado = numero1 * i;
+            printf("%d x %d = %d\n" , numero1 , i , resultado);
 
         }
 
