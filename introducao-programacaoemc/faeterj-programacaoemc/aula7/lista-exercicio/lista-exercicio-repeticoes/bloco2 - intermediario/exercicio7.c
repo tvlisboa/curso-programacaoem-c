@@ -10,12 +10,26 @@
 
  int main(){
 
-    
+   double vendasDia = 0;
+   double totalVendido = 0;
 
+   printf("****************************************** \n");
+   printf("*     EXERCICIO 7 - CONTROLE DE VENDAS   * \n");
+   printf("*  INFORME AS VENDAS NOS ULTIMOS 7 DIAS  * \n");
+   printf("****************************************** \n");
 
+   for (int i = 1; i <= 7; i++) {
+      
+      printf("Valor total diario: ");
+      scanf("%lf" , &vendasDia);
 
+      totalVendido = totalVendido + vendasDia;
 
-
-    system("pause");
-    return 0;
+   }
+   
+   printf("****************************************** \n");
+   printf("Valor total vendido na semana: %.2lf\n" , totalVendido);
+   printf("****************************************** \n");
+   system("pause");
+   return 0;
  }
