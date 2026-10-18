@@ -10,7 +10,7 @@
 
     printf("************************** \n");
     printf("* EXERCICIO 1 - CONTADOR * \n");
-    printf("* Iniciando contagem...... \n");
+    printf("*   Iniciando contagem   * \n");
     printf("************************** \n");
 
     for(int i = 1 ; i<=10 ; i++){
