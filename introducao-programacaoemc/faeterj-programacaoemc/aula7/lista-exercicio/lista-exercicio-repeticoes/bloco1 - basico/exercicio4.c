@@ -8,3 +8,28 @@
  * 5 x 2 = 10 
  * e assim sucessivamente.
  */
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+
+ int main(){
+
+    int numero1;
+
+    printf("************************* \n");
+    printf("* EXERCICIO 4 - TABUADA * \n");
+    printf("************************* \n");
+
+    printf("Informe numero a seguir - para calcular a sua tabuada \n");
+    scanf("%d" , &numero1);
+
+        for (int i = 1; i <= 10; i++) {
+            
+            printf("%d x %d = %d\n" , numero1 , i , numero1 * i);
+
+        }
+
+    system("pause");
+    return 0;
+ }
