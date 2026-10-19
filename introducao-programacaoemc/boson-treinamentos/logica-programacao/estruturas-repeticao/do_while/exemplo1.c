@@ -11,6 +11,8 @@
 
     int contador = 1;
 
+    printf("Inicio da contagem \n");
+
     do{
 
         printf("%d\n" , contador);

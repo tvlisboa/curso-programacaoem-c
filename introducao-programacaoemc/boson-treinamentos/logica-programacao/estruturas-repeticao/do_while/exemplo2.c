@@ -9,8 +9,8 @@
 
  int main(){
 
-    int contador = 1;
     int numero1 = 5;
+    int contador = 1;
     int resultado = 0;
 
     do{

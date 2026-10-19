@@ -10,8 +10,8 @@
 
  int main(){
 
-    int contador = 1;
     int numero;
+    int contador = 1;
     int resultado;
 
     printf("Informe o numero para calcular tabuada \n");
