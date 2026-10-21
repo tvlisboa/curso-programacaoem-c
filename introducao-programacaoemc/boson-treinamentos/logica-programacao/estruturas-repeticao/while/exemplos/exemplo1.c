@@ -12,12 +12,20 @@
 
     int contador = 1;
 
+    printf("************************ \n");
+    printf("* EXERCICIO - CONTADOR * \n");
+
+    printf("Iniciando contagem...\n");
+
     while (contador <=10) {
 
         printf("%d\n" , contador);
         contador++;
+
     }
-    
+
+    printf("Fim da contagem... \n");
     system("pause");
+    system("cls");
     return 0;
  }

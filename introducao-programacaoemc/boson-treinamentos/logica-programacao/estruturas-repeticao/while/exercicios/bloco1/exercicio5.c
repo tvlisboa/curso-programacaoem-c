@@ -21,6 +21,7 @@
     printf("Digite um numero a seguir entre 1 e 10: ");
     scanf("%d" , &numero1);
 
+    /* nao aceita numeros menores do que 1 e maiores do que 0 */
     while (numero1 <1 || numero1 > 10) {
         
         printf("Numero informado está incorreto - tente novamente ! \n");

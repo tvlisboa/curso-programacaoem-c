@@ -1,5 +1,7 @@
 /**
- * Exercicio 1 - Solicite ao usuario um numero, se for menor do que 10
+ * Exercicio 1
+ * Solicite ao usuario um numero
+ * Caso seja menor do que 10
  * Imprima na tela os numeros ate chegar no numero informado
  */
 

@@ -17,15 +17,19 @@
     printf("Informe um numero a seguir: ");
     scanf("%d" , &numero);
 
+    /* o bloco de codigo vai ser executado enquanto for menor que o numero que o usuario informou */
     do {
+
        printf("%d" , contador);
 
+       /* utilizado para saber se numero e primo - somente sera considerado se for impar ou igual a 1*/
        if(numero % contador == 0){
-
         contDiv++;
+
        }
 
        contador++;
+
     } while (contador<=numero);
 
         if(contDiv>=2){

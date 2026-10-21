@@ -11,16 +11,24 @@
  int main(){
 
     int contador = 1;
+    int totPares = 0;
+
+    printf("***************************** \n");
+    printf("* EXERCICIO - NUMEROS PARES * \n");
+    printf("***************************** \n");
 
     while (contador<=20) {
 
         if (contador % 2 == 0) {
             printf("%d\n" , contador);
+
+            totPares = totPares + 1;
         }
         
         contador++;
     }
     
+    printf("Total de numeros pares: %d\n" , totPares);
     system("pause");
     return 0;
  }
