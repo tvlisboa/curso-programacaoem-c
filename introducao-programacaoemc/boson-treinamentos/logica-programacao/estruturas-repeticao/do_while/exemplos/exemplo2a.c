@@ -21,9 +21,11 @@
     printf(" INFORME O NUMERO QUE DESEJA CALCULAR A TABUADA * \n");
     printf("************************************************* \n");
 
-    /* faca o bloco de codigo abaixo - enquanto a resposta do usuario
+    /* faca o bloco de codigo abaixo
+     * enquanto a resposta do usuario
      * for diferente de n
      */
+    
     do{
 
         printf("Digite: ");

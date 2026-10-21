@@ -36,5 +36,6 @@
 
     printf("A soma dos numeros informados foi: %d\n" , soma);
     system("pause");
+    system("cls");
     return 0;
  }
