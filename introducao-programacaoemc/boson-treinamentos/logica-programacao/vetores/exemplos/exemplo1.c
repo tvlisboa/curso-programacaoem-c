@@ -43,6 +43,26 @@
         printf("Frutas: %s\n" , frutas[i]);
     }
 
+    char paises[10][100] ={
+
+        "Estados Unidos da Ámerica",
+        "Brasil",
+        "Alemanha",
+        "Bolivia",
+        "Japao",
+        "China",
+        "Tailandia",
+        "Nova Zelandia",
+        "Espanha",
+        "Argentina",
+    };
+
+    for(int i = 0 ; i<=9 ; i++){
+
+        printf("Nome do pais: %s\n" , paises[i]);
+        
+    }
+
     system("pause");
     return 0;
  }
