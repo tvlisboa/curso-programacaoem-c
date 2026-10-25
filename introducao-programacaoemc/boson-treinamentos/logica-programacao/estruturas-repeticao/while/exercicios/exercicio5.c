@@ -36,6 +36,10 @@
 
     contador = inicioContagem;
 
+    /* verifica se o inicio da contagem e menor do que o final
+     * incrementa e faz as validacoes
+     */
+
     if(inicioContagem <  fimContagem){
 
         while ( contador < fimContagem) {
@@ -43,6 +47,7 @@
             printf("%d\n" , contador);
             totNumeros = totNumeros + 1;
 
+            /* verifica se o contador e par ou impar - incrementa no total de numeros pares ou impares */
             if(contador % 2 == 0){
 
                 printf("%d\n" , contador);
@@ -55,7 +60,9 @@
 
             }
 
+            /* calcula o total de numeros percorridos */
             soma = totImpar + totPar;
+            totNumeros = totNumeros + 1;
             contador++;
 
         }
@@ -78,11 +85,18 @@
                 totImpar = totImpar + 1;
             }
 
+            soma = totImpar +  totPar;
+            totNumeros = totNumeros + 1;
+            contador++;
+
         }
         
 
     }
 
+    printf("Resultados das execucoes \n");
+    printf("Total de numeros percorridos: %d\n" , totNumeros);
+    printf("Soma dos numeros pares: %d\n" , soma);
     system("pause");
     return 0;
 
