@@ -6,52 +6,62 @@
 
  #include <stdio.h>
  #include <stdlib.h>
+ #include <string.h>
+ #include <ctype.h>
 
  int main(){
 
-    int numero;
-    int contador = 1;
-    int contDiv = 0;
+    int numero;                 //numero informado pelo usuario
+    int contador;               //responsavel pelo incremento do loop
+    int contDiv = 0;            //responsavel pela descoberta se o numero e primo ou nao
+    char resp;               //solicita ao usuario - se deseja continuar ou nao
 
     printf("************************* \n");
     printf("Exercicio - 8 - Numeros primos \n");
-    printf("Informe um numero a seguir: ");
-    scanf("%d" , &numero);
 
-    /* o bloco de codigo vai ser executado enquanto 
-     * for menor que o numero que o usuario informou 
-     */
+    /* ira repertir o bloco - ate usuario digiar sair */
+    do{
 
-    do {
+        printf("Informe um numero a seguir: ");
+        scanf("%d" , &numero);
 
-       printf("%d" , contador);
+        contDiv = 0;
+        contador = 1;
 
-       /* utilizado para saber se numero e primo - 
-        * somente sera considerado se for 
-        * impar ou igual a 1
-        */
+        /* numeros informados menores que 2 - nao sao primos */
 
-       if(numero % contador == 0){
-       
-        contDiv++;
+        if(numero >= 2){
 
-       }
+            do{
 
-       contador++;
+                if(numero % contador == 0){
 
-    } while (contador<=numero);
+                    contDiv++;
 
+                }
 
-        if(contDiv>2){
-
-            printf("O numero %d , não e primo \n" , numero);
-
-        }else{
-
-            printf("O numero %d , e primo \n" , numero);
+            }while(contador <= numero);
 
         }
 
+        if(numero >=2 && contDiv == 2){
+
+            printf("O numero %d informado é primo. \n" , numero);
+
+        }else{
+
+            printf("O numero %d informado nao e primo. \n" , numero);
+
+        }
+
+            printf("Deseja continuar : selecione [S/N] ?");
+            scanf("%c" , &resp);
+
+            resp = toupper((unsigned char) resp);
+
+    }while(resp == 'S');
+
+    printf(" Programa finalizado \n");
     system("pause");
     return 0;
  }
