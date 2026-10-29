@@ -41,32 +41,16 @@
             printf("Valor do euro atual $$: ");
             scanf("%lf" , &cotaEuro);
 
-            /* nao aceita valores - inferior a 0 */
-            while((valorReal) || (cotaDolar) || (cotaEuro) <=0){
-
-                printf("Dados informados estao incorretos - tente novamente \n");
-                    
-                printf("******************** \n");
-                printf("Valor em Real R$: ");
-                scanf("%lf" , &valorReal);
-
-                printf("Valor do dolar atual U$$: ");
-                scanf("%lf" , &cotaDolar);
-
-                printf("Valor do euro atual $$: ");
-                scanf("%lf" , &cotaEuro);
-
-            }
-
             /* faz a covnversao dos valores */
             convDolar = (valorReal / cotaDolar);
             convEuro = (valorReal / cotaEuro);
+
+            
+            printf("Valor convertido em DOLAR: %.2lf\n" , convDolar);
+            printf("Valor convertido em EURO: %.2lf\n" , convEuro);
             cont++;
 
     }
-
-
-
     system("pause");
     return 0;
  }
