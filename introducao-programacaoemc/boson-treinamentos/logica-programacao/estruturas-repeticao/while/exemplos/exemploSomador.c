@@ -13,11 +13,23 @@
     int soma = 0;
     int cont = 1;
 
+   printf("********************* \n");
+   printf("* EXEMPLO - SOMADOR * \n");
+   printf("********************* \n");
 
+   printf("Digite 10 numeros a seguir... \n");
 
+      while(cont<=10){
 
+         printf("Digite o %d numero: " , cont);
+         scanf("%d" , &numeros);
 
+         soma = soma + numeros;
+         cont++;
 
-    system("pause");
-    return 0;
+      }
+
+   printf("Soma total dos numeros informados: %d\n" , soma);
+   system("pause");
+   return 0;
  }
