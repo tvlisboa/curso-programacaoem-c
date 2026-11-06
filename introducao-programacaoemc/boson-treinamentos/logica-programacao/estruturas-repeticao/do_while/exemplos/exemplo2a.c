@@ -28,7 +28,7 @@
     
     do{
 
-        printf("Digite: ");
+        printf("Digite a seguir: ");
         scanf("%d", &numero1);
 
         /* responsavel pre reinicializacao de cada nova tabuada verificada */
