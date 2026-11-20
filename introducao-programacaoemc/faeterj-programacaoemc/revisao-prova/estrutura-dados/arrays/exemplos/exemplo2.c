@@ -11,7 +11,7 @@
  int main(){
 
     int numeros[5];
-    int i = 0;
+    int i;
 
     printf("************************* \n");
     printf("*   EXEMPLO 1 - VETOR   * \n");
@@ -19,14 +19,14 @@
 
     printf("Informe 5 numeros a seguir \n");
 
-    for(i = 0 ; i<=4 ; i++){
+    for(i = 1 ; i<=5 ; i++){
 
         printf("Digite o %d valor: " , i);
         scanf("%d" , &numeros[i]);
 
     }
 
-    for(i = 0 ; i<=4 ; i++){
+    for(i = 1 ; i<=5 ; i++){
 
         printf("Valor na posicao %d =: %d\n" , i, numeros[i]);
 

@@ -15,7 +15,7 @@
     numeros[2] = 3;
     numeros[3] = 5;
 
-    for(int i = 0; i<=4; i++){
+    for(int i = 0; i<=3; i++){
 
         printf("Posicao %d = %d\n" , i, numeros[i]);
 
