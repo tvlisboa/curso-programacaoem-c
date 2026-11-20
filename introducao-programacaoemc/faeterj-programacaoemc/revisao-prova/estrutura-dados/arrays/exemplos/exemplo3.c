@@ -4,6 +4,7 @@
  * Solicite ao usuario 10 numeros
  * Armazene em um vetor e mostre quais sao impares e pares
  * E a quantidade de impares
+ * Nao aceite numeros negativos
  */
 
  #include <stdio.h>
@@ -15,6 +16,7 @@
     int i = 1;
     int totPar = 0;
     int totImpar = 0;
+    int totNegativos = 0;
 
     printf("******************************** \n");
     printf("*   EXEMPLO 2 - PAR OU IMPAR   * \n");
@@ -27,8 +29,22 @@
         printf("Digite o %dº numero: " , i);
         scanf("%d" , &numeros[i]);
 
-        /* verifica se e par ou impar e faz somatorio */
+        /* nao aceita numeros negativos */
+        while(numeros[i] <0){
 
+            printf("Dados informados sao invalidos - tente novamente \n");
+            printf("Digite o %dº numero: " , i);
+            scanf("%d" , &numeros[i]);
+
+            if(numeros[i] <0){
+
+                totNegativos++;
+
+            }
+
+        }
+
+        /* verifica se e par ou impar e faz somatorio */
         if(numeros[i] % 2 == 0){
 
             printf("O numero %d  na posicao %d é par! \n" , i , numeros[i]);
@@ -41,10 +57,12 @@
 
         }
 
+
     }
 
     printf("Total de numeros pares informados: %d\n", totPar);
     printf("Total de numeros pares informados: %d\n", totImpar);
+    printf("Soma das tentaivas invalidas: %d\n" , totNegativos);
     system("pause");
     system("cls");
     return 0;
